@@ -1,6 +1,8 @@
+package Classwork;
+
 import java.util.Stack;
 
-import WeBareBears.Bear;
+import Classwork.WeBareBears.Bear;
 
 /**
  * Utility class for stack operations and bracket checking.

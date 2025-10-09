@@ -1,4 +1,4 @@
-package WeBareBears;
+package Classwork.WeBareBears;
 
 public class Forrest {
 

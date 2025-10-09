@@ -1,4 +1,4 @@
-package WeBareBears;
+package Classwork.WeBareBears;
 
 import java.util.Arrays;
 import java.util.Iterator;
