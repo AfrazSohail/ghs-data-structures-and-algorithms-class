@@ -1,3 +1,4 @@
+
 /**
  * NavigationLab - A route planning and optimization system
  *
@@ -36,6 +37,18 @@ public class Location {
         this.x = x;
         this.y = y;
         this.next = next;
+    }
+
+    /**
+     * Constructs a new Location with specified coordinates and name.
+     * The next location is set to null.
+     *
+     * @param name The name identifier for this location
+     * @param x    The x-coordinate of this location
+     * @param y    The y-coordinate of this location
+     */
+    public Location(String name, double x, double y) {
+        this(name, x, y, null);
     }
 
     /**

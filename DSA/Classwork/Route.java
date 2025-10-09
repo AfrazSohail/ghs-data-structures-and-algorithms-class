@@ -1,3 +1,6 @@
+import Location;
+
+package Classwork;
 
 /**
  * NavigationLab - A route planning and optimization system
@@ -211,7 +214,7 @@ public class Route {
         Location runner = depot;
         for (int i = 1; i < index; i++) {
             runner = runner.next;
-            if (runner.next == null) {
+            if (runner == null) {
                 return false;
             }
         }
@@ -294,79 +297,37 @@ public class Route {
      *         have the same name, or either location is not found in the route
      */
     public boolean swap(Location location1, Location location2) {
-        if (depot == null || location1 == null || location2 == null) {
-            return false;
-        }
-        if (location1.name.equals(location2.name)) {
+        if (depot == null || location1.name == location2.name) {
             return false;
         }
 
-        // Find both locations and their predecessors in one pass
-        Location prev1 = null, curr1 = null, prev2 = null, curr2 = null;
-        Location current = depot, previous = null;
-
-        // Handle depot cases first
-        if (depot.name.equals(location1.name)) {
-            prev1 = null;
-            curr1 = depot;
+        Location driver1 = depot;
+        while (driver1.next != null && driver1.next.name != location1.name) {
+            driver1 = driver1.next;
         }
-        if (depot.name.equals(location2.name)) {
-            prev2 = null;
-            curr2 = depot;
-        }
-
-        while (current != null && (curr1 == null || curr2 == null)) {
-            if (curr1 == null && current.name.equals(location1.name)) {
-                prev1 = previous;
-                curr1 = current;
-            }
-            if (curr2 == null && current.name.equals(location2.name)) {
-                prev2 = previous;
-                curr2 = current;
-            }
-            previous = current;
-            current = current.next;
-        }
-
-        if (curr1 == null || curr2 == null) {
+        if (driver1.next.name != location1.name) {
             return false;
         }
 
-        if (curr1.next == curr2) {
-            if (prev1 != null) {
-                prev1.next = curr2;
-            } else {
-                depot = curr2;
-            }
-            curr1.next = curr2.next;
-            curr2.next = curr1;
-            return true;
-        } else if (curr2.next == curr1) {
-            if (prev2 != null) {
-                prev2.next = curr1;
-            } else {
-                depot = curr1;
-            }
-            curr2.next = curr1.next;
-            curr1.next = curr2;
-            return true;
+        Location driver2 = depot;
+        while (driver2.next != null && driver2.next.name != location2.name) {
+            driver2 = driver2.next;
         }
-        Location next1 = curr1.next;
-        Location next2 = curr2.next;
-
-        if (prev1 != null) {
-            prev1.next = curr2;
-        } else {
-            depot = curr2;
-        }
-        if (prev2 != null) {
-            prev2.next = curr1;
-        } else {
-            depot = curr1;
+        if (driver2.next.name != location2.name) {
+            return false;
         }
 
-        curr1.next = next2;
-        curr2.next = next1;
+        Location previousLocation1 = driver1;
+        Location previousLocation2 = driver2;
+
+        Location nextLocation1 = (driver1.next.next != null) ? driver1.next.next : null;
+        Location nextLocation2 = (driver2.next.next != null) ? driver2.next.next : null;
+
+        location1.next = nextLocation2;
+        location2.next = nextLocation1;
+
+        previousLocation1.next = location2;
+        previousLocation2.next = location1;
 
         return true;
     }
@@ -388,7 +349,7 @@ public class Route {
             routeString += driver.name + " (" + driver.x + ", " + driver.y + ") -> ";
             driver = driver.next;
         }
-        return (depot != null) ? (routeString + depot.name + " (" + depot.x + ", " + depot.y + ") ") : "Empty Route";
+        return routeString + depot.name + " (" + depot.x + ", " + depot.y + ") ";
     }
 
     // Basic Linked List Methods

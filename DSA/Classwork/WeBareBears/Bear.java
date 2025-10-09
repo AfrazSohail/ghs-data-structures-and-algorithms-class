@@ -1,4 +1,4 @@
-package WeBareBears;
+package Classwork.WeBareBears;
 
 /**
  * Represents a Bear with a name, weight, and species identifier.
