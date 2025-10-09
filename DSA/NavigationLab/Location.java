@@ -40,6 +40,18 @@ public class Location {
     }
 
     /**
+     * Constructs a new Location with specified coordinates and name.
+     * The next location is set to null.
+     *
+     * @param name The name identifier for this location
+     * @param x    The x-coordinate of this location
+     * @param y    The y-coordinate of this location
+     */
+    public Location(String name, double x, double y) {
+        this(name, x, y, null);
+    }
+
+    /**
      * Calculates the Euclidean distance between this location and another location.
      * Uses the distance formula: sqrt((x2-x1)² + (y2-y1)²)
      *

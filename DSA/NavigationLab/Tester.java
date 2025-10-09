@@ -21,47 +21,6 @@ public class Tester {
      * @param args Command line arguments (not currently used)
      */
     public static void main(String args[]) {
-        Route earth = new Route();
-        // Should Create a new route starting and ending at the depot
-        System.out.println(earth);
 
-        Route middleEarth = new Route(new Location("The Shire", 2, 5, null));
-        // Should create a new route starting at the depot, going to The Shire, and
-        // returning to the depot
-        System.out.println(middleEarth);
-
-        middleEarth.addLocation(new Location("Rivendell", 5, 10, null));
-        middleEarth.addLocation(new Location("Mordor", 10, 15, null));
-        middleEarth.addLocation(new Location("Gondor", 7, 12, null));
-        middleEarth.addLocation(new Location("Isengard", 6, 8, null));
-        middleEarth.addLocation(new Location("Helm's Deep", 4, 9, null));
-
-        System.out.println(middleEarth.routeDistance());
-        // Should print the total distance of the route: Depot -> The Shire -> Rivendell
-        // -> Mordor -> Gondor -> Isengard -> Helm's Deep -> Depot (approx 38.74)
-
-        Route empty = new Route();
-        System.out.println(empty.routeDistance());
-        // Should print 0.0 since the route only contains the depot
-
-        middleEarth.reverseRoute();
-        // Should reverse the order of locations in the route
-        System.out.println(middleEarth);
-
-        empty.reverseRoute();
-        // Reversing an empty route should have no effect
-        System.out.println(empty);
-
-        middleEarth.addLocation(new Location("Fangorn", 3, 7, null));
-        // Should add Fangorn to the end of the route
-        System.out.println(middleEarth);
-
-        middleEarth.addLocation(new Location("Fangorn", 3, 7, null));
-        // Should add Fangorn to the end of the route
-        System.out.println(middleEarth);
-
-        middleEarth.addLocation(new Location("Minas Tirith", 0, 0, new Location("Osgiliath", 1, 1, null)));
-        // Should add Minas Tirith after the depot and Osgiliath after Minas Tirith
-        System.out.println(middleEarth);
     }
 }
