@@ -21,6 +21,16 @@ public class Tester {
      * @param args Command line arguments (not currently used)
      */
     public static void main(String args[]) {
+        Route fnaf = new Route();
+        System.out.println(fnaf);
 
+        fnaf.addLocation(new Location("Freddy Fazbear's Pizza", 3, 4, null));
+        fnaf.addLocation(new Location("Bonnie's Stage", 5, 6, null));
+        fnaf.addLocation(new Location("Chica's Kitchen", 7, 8, null));
+        fnaf.addLocation(new Location("Foxy's Cove", 1, 6, null));
+        System.out.println(fnaf);
+
+        fnaf.swap(new Location("Foxy's Cove", 1, 6, null), new Location("Chica's Kitchen", 1, 6, null));
+        System.out.println(fnaf);
     }
 }
