@@ -1,19 +1,29 @@
 package Classwork.Unit7.HuffmanEncoding;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Huffman {
 
     // own freq, encodings, lists, etc.
     private final ArrayList<CharNode> charTree = new ArrayList<>();
 
+    private final HashMap<String, Character> encodings = new HashMap<>();
+
+    private String text;
+    private String encodedText;
+    private CharNode root;
+
     public Huffman(String text) {
+        this.text = text;
         buildArray(text.trim());
+        buildTree();
+        scanTree(charTree.get(0), "");
+        encodeText();
     }
 
     public Huffman(char[] chars) {
-        buildArray(new String(chars).trim());
-        buildTree();
+        this(new String(chars));
     }
 
     private void buildArray(String text) {
@@ -47,10 +57,41 @@ public class Huffman {
             charTree.add(parent);
             charTree.sort(null);
         }
+        root = charTree.get(0);
+    }
+
+    private void scanTree(CharNode node, String path) {
+        if (node.character != '\uFFFF') {
+            encodings.put(path, node.character);
+        } else {
+            scanTree(node.left, path + "0");
+            scanTree(node.right, path + "1");
+        }
+    }
+
+    private void encodeText() {
+        StringBuilder encoded = new StringBuilder();
+        for (char c : text.toCharArray()) {
+            for (String key : encodings.keySet()) {
+                if (encodings.get(key) == c) {
+                    encoded.append(key);
+                    break;
+                }
+            }
+        }
+        encodedText = encoded.toString();
     }
 
     @Override
     public String toString() {
-        return charTree.get(0).toString();
+        return root.toString();
+    }
+
+    public String getEncodedText() {
+        return encodedText;
+    }
+
+    public CharNode getRoot() {
+        return root;
     }
 }

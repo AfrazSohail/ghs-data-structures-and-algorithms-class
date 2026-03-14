@@ -12,6 +12,15 @@ public class CharNode implements Comparable<CharNode> {
         this.frequency = frequency;
     }
 
+    public int getHeight() {
+        if (left == null && right == null) {
+            return 1;
+        }
+        int leftHeight = left != null ? left.getHeight() : 0;
+        int rightHeight = right != null ? right.getHeight() : 0;
+        return 1 + Math.max(leftHeight, rightHeight);
+    }
+
     @Override
     public int compareTo(CharNode other) {
         if (this.frequency == other.frequency) {

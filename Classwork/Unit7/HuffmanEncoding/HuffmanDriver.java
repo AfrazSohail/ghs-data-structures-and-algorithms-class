@@ -6,6 +6,9 @@ public class HuffmanDriver {
         char[] chars = new HuffmanDriver().getCharArray();
         Huffman huffman = new Huffman(chars);
         System.out.println("Huffman Tree:\n" + huffman);
+
+        JPanels.CreateTextPanel(new String(chars), huffman.getEncodedText());
+        JPanels.CreateTreePanel(huffman.getRoot());
     }
 
     private char[] getCharArray() {
