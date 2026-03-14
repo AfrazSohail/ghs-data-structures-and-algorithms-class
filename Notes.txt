@@ -1,0 +1,390 @@
+====================<< Unit 1 >>====================
+
+Big O Stacks and Queues
+
+Run Time
+    number of atomic operations
+
+Atomic Opperations
+    Arithmetic operations (+ - * / %)
+    Variable assignment
+    Comparision operations (== != < > <= >=)
+    Logical operations (&& || !)
+    Array indexing / access
+    Branching
+    Calling a function
+    Returning from a function
+
+To find Big O:
+    1. Identify the basic operation
+    2. Count how many times the basic operation is executed as a function of input size n
+    3. Express this count using Big O notation
+
+Asymptotic Notation
+    is used to describe the running time of an Algorithms---how much time an algorithm takes with a given input n.
+
+    Big O: Upper Bound --- Worst Case
+    Big Omega: Lower Bound --- Best Case
+    Big Theta: Tight Bound --- Average Case
+
+Simplifying Big O Expressions
+    1. Drop constants
+    2. Keep the term that grows the fastest as n increases
+
+Constant Time
+    O(1)
+    Examples:
+        Conditional Branching
+        Arithmetic / Logic Operations
+        Declarations / Assignments
+        Accessing elements in an array by index
+        Compare / Exchange two variables in an array
+        Stack Push / Pop
+
+Linear Time (Polynomial Time)
+    O(n)
+    Examples:
+        Get the min/max value in an array
+        Print all the elements in an array
+        Linear Search
+
+Logarithmic Time
+    O(log n)
+    Examples:
+        Binary Search
+        Insertion in a balanced BST
+
+Linearithmic Time
+    O(n log n)
+    Examples:
+        Efficient Sorting Algorithms (Merge Sort, Quick Sort, Heap Sort)
+
+Quadratic Time (Polynomial Time)
+    O(n^2)
+    Examples:
+        Bubble Sort
+        Selection Sort
+        Insertion Sort
+        Nested Loops over the same data structure
+
+Cubic Time (Polynomial Time)
+    O(n^3)
+    Examples:
+        Floyd-Warshall Algorithm
+
+Exponential Time
+    O(2^n)
+    Examples:
+        Power set - finding all subsets of a set
+        Recursive calculation of Fibonacci numbers
+
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Examples Problems
+
+Loops in Sequence
+for (j = 0; j < n; j++) {
+    // 3 atomics
+}
+
+for (i = 0; i < n; i++) {
+    // 5 atomics
+}
+Complexity = O(3n + 5n) = O(8n) = O(n)
+
+
+Nested Loops
+for (i = 0; i < n; i++) {
+    for (j = 0; j < n; j++) {
+        // 4 atomics
+    }
+}
+Complexity = O(4n^2) = O(n^2)
+
+
+Consecutive Statements
+// 2 atomics
+for (i = 0; i < n; i++) {
+    // 3 atomics
+}
+// 5 atomics
+Complexity = O(2 + 3n + 5) = O(3n + 7) = O(n)
+
+
+If-then-else Statements
+if (condition) {
+    // 4 atomics
+} else {
+    // 6 atomics
+}
+Complexity = O(max(4, 6)) = O(6) = O(1)
+
+
+Sequential Searches
+for (i = 0; i < n; i++) {
+    if (array[i] == target) {
+        return i; // Found
+    }
+}
+Complexity = O(n)
+
+
+Binary Searches
+while (low <= high) {
+    mid = (low + high) / 2;
+    if (array[mid] == target) {
+        return mid; // Found
+    } else if (array[mid] < target) {
+        low = mid + 1;
+    } else {
+        high = mid - 1;
+    }
+}
+Complexity = O(log n)
+
+
+Recursive Algorithms
+long factorial (n) {
+    if (n == 0) {
+        return 1; // Base case
+    } else {
+        return n * factorial(n - 1); // Recursive case
+    }
+}
+Complexity = O(n)
+
+long fib (n) {
+    if (n <= 1) {
+        return n; // Base case
+    } else {
+        return fib(n - 1) + fib(n - 2); // Recursive case
+    }
+}
+Complexity = O(2^n)
+
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+
+When is it log n ?
+    1. The input size is reduced by a constant factor at each step
+    2. Examples: Binary Search, Balanced Tree Operations
+
+When is it n log n ?
+    1. The algorithm performs a logarithmic time operation n times
+    2. Examples: Merge Sort, Quick Sort, Heap Sort
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+
+List Operations
+    Index Access: O(1)
+    Index Assignment: O(1)
+    Append: O(1) amortized
+    Pop from end: O(1)
+    Pop from index: O(n)
+    Insert at index: O(n)
+    Remove by value: O(n)
+    item in list: O(n)
+    Slice from list: O(k) where k is the size of the slice
+    Concatenation: O(k) where k is the size of the added list
+    Iteration: O(n)
+    Sort list: O(n log n)
+
+----------------------------------------------------
+
+Abstract Data Types (ADT)
+    A data type where the implementation is hidden from the user
+    Examples: List, Stack, Queue, Set, Map
+
+Stacks
+    LIFO (Last In First Out)
+        Elements are added and removed from the top of the stack
+    Operations:
+        push(item): O(1)
+        pop(): O(1)
+        peek(): O(1)
+        isEmpty(): O(1)
+        size(): O(1)
+    Use Cases:
+        Function Call Management
+        Expression Evaluation
+        Backtracking Algorithms
+    Java Class
+        Initialize (no return): Stack<E> stack = new Stack<>();
+        Push (item): stack.push(item);
+        Pop (no return): stack.pop();
+        Peek (item): stack.peek();
+        Is Empty (boolean): stack.isEmpty();
+        Size (int): stack.size();
+
+Queues
+    FIFO (First In First Out)
+        Elements are added at the back and removed from the front of the queue
+    Operations:
+        enqueue(item): O(1)
+        dequeue(): O(1)
+        front(): O(1)
+        isEmpty(): O(1)
+        size(): O(1)
+    Use Cases:
+        Task Scheduling
+        Breadth-First Search (BFS) in Graphs
+    Java Class
+        Initialize (no return): Queue<E> queue = new LinkedList<>();
+        Enqueue (no return): queue.add(item);
+        Dequeue (no return): queue.remove();
+        Front (item): queue.peek();
+        Is Empty (boolean): queue.isEmpty();
+        Size (int): queue.size();
+
+Infix, Postfix, and Prefix Notation
+    Infix: Operators are between operands (e.g., A + B)
+    Postfix: Operators are after operands (e.g., A B +)
+    Prefix: Operators are before operands (e.g., + A B)
+
+Conversion Algorithms
+    Infix to Postfix:
+        1. Scan the infix expression from left to right
+        2. a. If the scanned symbol is a left parenthesis, push it onto the stack
+           b. If the scanned symbol is an operand, then place directly in the postfix expression (output)
+           c. If the scanned symbol is a right parenthesis, then go on popping all the items from the stack and place them in the postix expression till we get a matching left parenthesis
+           d. If the scanned symbol is an operator, then go on removing all the operators from the stack and place them in the postfix expression, iff the precedence of the operatior which is on the top of the stack is greater than or equal to the precedence of the scanned operator and push the scanner opereator onto the stack.
+
+        Infix to Prefix:
+            1. Reverse the infix expression
+            2. Replace ( with ) and vice versa
+            3. Convert the modified expression to postfix
+            4. Reverse the postfix expression to get prefix
+
+        Postfix to Infix:
+            1. Scan the postfix expression from left to right
+            2. a. If the scanned symbol is an operand, push it onto the stack
+               b. If the scanned symbol is an operator, pop two operands from the stack, create a string by concatenating the two operands and the operator in infix form with parentheses, and push the resulting string back onto the stack
+            3. At the end of the expression, the stack will contain one element which is the infix expression
+
+====================<< Unit 2 >>====================
+
+Linked Lists
+
+Linked List
+    A linear data structure where elements are stored in nodes that contain a value and a reference (or pointer) to the next node in the sequence.
+    Types:
+        Singly Linked List: Each node points to the next node.
+        Doubly Linked List: Each node points to both the next and previous nodes.
+        Circular Linked List: The last node points back to the first node.
+    Operations:
+        Insertion: O(1) if inserting at the head or tail (with tail pointer), O(n) if inserting at a specific position.
+        Deletion: O(1) if deleting the head, O(n) if deleting a specific node.
+        Search: O(n) for traversing the list to find a value.
+        Traversal: O(n) for visiting each node.
+    Use Cases:
+        Dynamic memory allocation
+        Implementing stacks and queues
+        Handling collisions in hash tables
+    Java Class
+        Node Class:
+            class Node<E> {
+                E data;
+                Node<E> next;
+                Node(E data) {
+                    this.data = data;
+                    this.next = null;
+                }
+            }
+
+    IMP ---
+
+====================<< Unit 3 >>====================
+
+Hash Tables and HashMaps
+
+====================<< Unit 4 >>====================
+
+Recursive Sorts
+
+====================<< Unit 5 >>====================
+
+Dynamic Programming and Memoization
+
+====================<< Unit 6 >>====================
+
+Trees -- Focusing on Binary and AVL
+
+Ojectives
+    use vocabulary: iterator, generator, tree, height, depth, parent, child, binary searc tree, rotate
+    write iterators and generators for custom classes
+    implement the basic tree traversal algorithms: pre-order, post-order, and in-order
+    implement a binary search tree (BST) with basic operations: put, get, floor, ceil, remove
+    explain the asymptotic running times of BST operations
+    explain tree rotations: how they work and why they are useful
+
+Definitions
+    A TREE is a hierarchal collection of nodes
+    The ROOT is the top node
+    CHILDREN – connected nodes one level down
+    LEAF – a node with no children
+        All nodes can have 0 or more children
+        LEAVES – nodes with 0 children
+    PARENT – connected node one level up
+        Nodes have at most 1 parent
+        The root has 0 parents
+    INTERNAL NODE is said to be the PARENT of its child nodes --- basically PARENT node
+    SIBLINGS are nodes that share the same parent
+    EDGE is the connection between a parent and a child node
+    PATH is a series pf edges connecting two nodes
+        PATH LENGTH is the number of edges in a path
+        In trees, paths are directional --- from parent to child
+    DESCENDANTS of x are all nodes in the subtree rooted at x
+    ANCESTORS of x are all nodes on the path from the root to x
+    SUBTREE at x - the tree consisting of x and all its descendants
+    DEPTH of a node is the number of edges from the root to that node
+    HEIGHT of a node is the number of edges on the longest path from that node to a leaf
+
+Binary Trees
+    A BINARY TREE is a tree in which each node has at most two children
+        The two children are referred to as the LEFT CHILD and RIGHT CHILD
+    A FULL BINARY TREE is a binary tree in which every node other than the leaves has two children
+    A COMPLETE BINARY TREE is a binary tree in which all levels are fully filled except possibly the last level, which is filled from left to right
+    A PERFECT BINARY TREE is a binary tree in which all internal nodes have two children and all leaves are at the same level
+
+Tree Traversals --- the process of visiting all the nodes in a tree in a specific order
+    PRE-ORDER TRAVERSAL: Visit the root node, traverse the left subtree, traverse the right subtree
+    IN-ORDER TRAVERSAL: Traverse the left subtree, visit the root node, traverse the right subtree
+    POST-ORDER TRAVERSAL: Traverse the left subtree, traverse the right subtree, visit the root node
+    /-/ LEVEL-ORDER TRAVERSAL: Visit nodes level by level from top to bottom and left to right
+--- Why names are like that? ---
+    Pre-order: root is processed before its subtrees
+    In-order: root is processed between its subtrees
+    Post-order: root is processed after its subtrees
+
+A recursive view of trees
+    A tree can be defined recusively as:
+        1. An empty tree
+        2. A root node with a left and right subtree, both of which are also trees
+    Also, the root of a tree stores some data
+    We can use lists to a hierarchical structure by manking lists of lists
+    To make this more usefull, we can store some data at each node
+
+Binary Search Trees (BST)
+    A BINARY SEARCH TREE is a binary tree in which each node has a comparable key (and an associated value) and satisfies the following properties:
+        1. EVERY LEFT DESCENDANT of a node has a key less than the node's key
+        2. EVERY RIGHT DESCENDANT of a node has a key greater than the node's key
+        3. BOTH the left and right subtrees must also be binary search trees
+
+PREORDER and POSTORDER can be used to reconstruct the tree structure
+    INORDER traversal of a BST produces the keys in sorted order
+
+Balanced Binary Search Trees
+    A binary search tree is considered balanced if the heights of the two subtrees of any node never differ by more than one
+    AVL TREES are a type of self-balancing binary search tree where the difference in heights between the left and right subtrees cannot be more than one for any node
+    To maintain balance, AVL trees perform rotations during insertions and deletions
+
+====================<< Unit 7 >>====================
+
+Priority Queues, Heaps, and HeapSort
+
+====================<< Unit 8 >>====================
+
+Graphs and Greedy Algorithms
+
+===================<< FINAL LAB >>==================
+
+AI with Minimax
+

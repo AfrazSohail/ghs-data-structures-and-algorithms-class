@@ -1,0 +1,640 @@
+Kupwara,1,Jammu & Kashmir,Kashmiri,618750,Pahari,44394.0,,
+Badgam,2,Jammu & Kashmir,Kashmiri,714418,,,,
+Leh(Ladakh),3,Jammu & Kashmir,Bauti,89319,,,,
+Kargil,4,Jammu & Kashmir,Purkhi,92008,Bauti,7344.0,,
+Punch,5,Jammu & Kashmir,Pahari,239402,,,,
+Rajouri,6,Jammu & Kashmir,Pahari,310672,Gojri/Gujjari/Gujar,68577.0,,
+Kathua,7,Jammu & Kashmir,Dogri,501940,Pahari,36930.0,,
+Baramula,8,Jammu & Kashmir,Kashmiri,824025,Pahari,49348.0,,
+Bandipore,9,Jammu & Kashmir,Kashmiri,305060,Dardi,17189.0,,
+Srinagar,10,Jammu & Kashmir,Kashmiri,1164212,,,,
+Ganderbal,11,Jammu & Kashmir,Kashmiri,204985,,,,
+Pulwama,12,Jammu & Kashmir,Kashmiri,511681,,,,
+Shupiyan,13,Jammu & Kashmir,Kashmiri,234253,,,,
+Anantnag,14,Jammu & Kashmir,Kashmiri,917945,,,,
+Kulgam,15,Jammu & Kashmir,Kashmiri,390125,,,,
+Doda,16,Jammu & Kashmir,Kashmiri,145139,Bhadrawahi,39701.0,,
+Ramban,17,Jammu & Kashmir,Kashmiri,98570,,,,
+Kishtwar,18,Jammu & Kashmir,Kashmiri,115463,Padari,17145.0,,
+Udhampur,19,Jammu & Kashmir,Dogri,451530,,,,
+Reasi,20,Jammu & Kashmir,Dogri,119654,Kashmiri,55425.0,,
+Jammu,21,Jammu & Kashmir,Dogri,1084040,,,,
+Samba,22,Jammu & Kashmir,Dogri,269559,,,,
+Chamba,23,Himachal Pradesh,Pahari,107020,Bharmauri/Gaddi,36942.0,Chambeali/Chamrali,97537.0
+Kangra,24,Himachal Pradesh,Kangri,1008859,Pahari,116671.0,,
+Lahul & Spiti,25,Himachal Pradesh,Pattani,8371,Kinnauri,10940.0,,
+Kullu,26,Himachal Pradesh,Kulvi,193603,Pahari,96876.0,Siraji,41556.0
+Mandi,27,Himachal Pradesh,Mandeali,582805,Pahari,228736.0,,
+Hamirpur,28,Himachal Pradesh,Pahari,345515,,,,
+Una,29,Himachal Pradesh,Hindi,180583,Pahari,61732.0,Punjabi,52256.0
+Bilaspur,30,Himachal Pradesh,Bilaspuri_Kahluri,291715,,,,
+Solan,31,Himachal Pradesh,Hindi,204894,Pahari,83885.0,Others,22952.0
+Sirmaur,32,Himachal Pradesh,Pahari,123296,Sirmauri,83956.0,Hindi,189470.0
+Shimla,33,Himachal Pradesh,Pahari,500834,Hindi,75296.0,,
+Kinnaur,34,Himachal Pradesh,Kinnauri,60596,,,,
+Gurdaspur,35,Punjab,Punjabi,2201675,Hindi,49786.0,,
+Kapurthala,36,Punjab,Punjabi,743460,Hindi,58937.0,,
+Jalandhar,37,Punjab,Punjabi,1933696,Hindi,215713.0,,
+Hoshiarpur,38,Punjab,Punjabi,1487282,Hindi,83609.0,,
+Shahid Bhagat Singh Nagar,39,Punjab,Punjabi,579448,Hindi,26778.0,,
+Fatehgarh Sahib,40,Punjab,Punjabi,539675,Hindi,54944.0,,
+Ludhiana,41,Punjab,Punjabi,2786939,Hindi,636500.0,,
+Moga,42,Punjab,Punjabi,957963,Hindi,31987.0,,
+Firozpur,43,Punjab,Punjabi,1633474,Hindi,62132.0,Bagri_Rajasthani,221174.0
+Muktsar,44,Punjab,Punjabi,830946,Hindi,61199.0,,
+Faridkot,45,Punjab,Punjabi,566824,Hindi,42660.0,,
+Bathinda,46,Punjab,Punjabi,1243587,Hindi,119596.0,,
+Mansa,47,Punjab,Punjabi,743044,Hindi,21291.0,,
+Patiala,48,Punjab,Punjabi,1698730,Hindi,147698.0,,
+Amritsar,49,Punjab,Punjabi,2348573,Hindi,119504.0,,
+Tarn Taran,50,Punjab,Punjabi,1108314,Hindi,8597.0,,
+Rupnagar,51,Punjab,Punjabi,634161,Hindi,44870.0,,
+Sahibzada Ajit Singh Nagar,52,Punjab,Punjabi,743154,Hindi,222991.0,,
+Sangrur,53,Punjab,Punjabi,1570200,Hindi,48251.0,Haryanvi,16906.0
+Barnala,54,Punjab,Punjabi,566580,Hindi,25586.0,,
+Chandigarh,55,Chandigarh,Hindi,715131,Punjabi,232427.0,,
+Uttarkashi,56,Uttarakhand,Garhwali,266621,Hindi,20655.0,Others,7260.0
+Chamoli,57,Uttarakhand,Garhwali,350667,Hindi,19956.0,,
+Rudraprayag,58,Uttarakhand,Garhwali,228916,Hindi,10167.0,,
+Tehri Garhwal,59,Uttarakhand,Garhwali,560020,Hindi,35416.0,Jaunpuri/Jaunsari,5880.0
+Dehradun,60,Uttarakhand,Hindi,1014363,Jaunpuri/Jaunsari,108945.0,Garhwali,263721.0
+Garhwal,61,Uttarakhand,Garhwali,572792,Hindi,91360.0,,
+Pithoragarh,62,Uttarakhand,Kumauni,423862,Hindi,35590.0,,
+Bageshwar,63,Uttarakhand,Kumauni,243965,Hindi,10680.0,,
+Almora,64,Uttarakhand,Kumauni,561642,Hindi,31382.0,Garhwali,14597.0
+Champawat,65,Uttarakhand,Kumauni,203022,Hindi,50254.0,,
+Nainital,66,Uttarakhand,Kumauni,462493,Hindi,369373.0,,
+Udham Singh Nagar,67,Uttarakhand,Hindi,1028354,Bengali,121500.0,Urdu,53288.0
+Hardwar,68,Uttarakhand,Hindi,1649529,Urdu,182536.0,,
+Panchkula,69,Haryana,Hindi,460995,Punjabi,53236.0,,
+Ambala,70,Haryana,Hindi,954249,Punjabi,123598.0,,
+Yamunanagar,71,Haryana,Hindi,1071954,Punjabi,84436.0,Urdu,7329.0
+Kurukshetra,72,Haryana,Hindi,634845,Punjabi,100411.0,Haryanvi,74760.0
+Kaithal,73,Haryana,Hindi,284491,Haryanvi,612962.0,Punjabi,62649.0
+Karnal,74,Haryana,Hindi,817077,Haryanvi,482258.0,,
+Panipat,75,Haryana,Haryanvi,577342,Hindi,512551.0,,
+Sonipat,76,Haryana,Haryanvi,969970,Hindi,437189.0,,
+Jind,77,Haryana,Haryanvi,1121632,Hindi,148357.0,Punjabi,17238.0
+Fatehabad,78,Haryana,Hindi,335149,Haryanvi,187189.0,Punjabi,132028.0
+Sirsa,79,Haryana,Punjabi,537147,Bagri,233504.0,Hindi,210658.0
+Hisar,80,Haryana,Haryanvi,1199073,Hindi,460314.0,,
+Bhiwani,81,Haryana,Haryanvi,1357634,Hindi,245910.0,Rajasthani,3103.0
+Rohtak,82,Haryana,Haryanvi,816469,Hindi,186742.0,Punjabi,5493.0
+Jhajjar,83,Haryana,Haryanvi,708110,Hindi,230064.0,,
+Mahendragarh,84,Haryana,Hindi,523773,Haryanvi,372288.0,,
+Rewari,85,Haryana,Hindi,652367,Haryanvi,230304.0,,
+Gurgaon,86,Haryana,Hindi,993585,Haryanvi,352590.0,,
+Mewat,87,Haryana,Mewati,343084,Hindi,310291.0,Urdu,215188.0
+Faridabad,88,Haryana,Hindi,1592002,Punjabi,63793.0,Haryanvi,14686.0
+Palwal,89,Haryana,Hindi,920376,Haryanvi,29878.0,Mewati,38767.0
+North West,90,Nct Of Delhi,Hindi,3144573,Punjabi,135816.0,Haryanvi,22736.0
+North,91,Nct Of Delhi,Hindi,729070,Urdu,74365.0,Punjabi,24208.0
+North East,92,Nct Of Delhi,Hindi,1899970,Urdu,254222.0,,
+East,93,Nct Of Delhi,Hindi,1445818,Punjabi,53925.0,Urdu,37926.0
+New Delhi,94,Nct Of Delhi,Hindi,110952,Punjabi,4577.0,,
+Central,95,Nct Of Delhi,Hindi,365002,Punjabi,23796.0,Urdu,157577.0
+West,96,Nct Of Delhi,Hindi,1919154,Punjabi,369359.0,,
+South West,97,Nct Of Delhi,Hindi,1908889,Punjabi,66909.0,,
+South,98,Nct Of Delhi,Hindi,2119516,Urdu,141925.0,Punjabi,43005.0
+Ganganagar,99,Rajasthan,Punjabi,579894,Bagri,322353.0,Rajasthani,284072.0
+Hanumangarh,100,Rajasthan,Rajasthani,1032658,Punjabi,308129.0,Bagri,113548.0
+Bikaner,101,Rajasthan,Rajasthani,1963314,Marwari,65917.0,Hindi,151409.0
+Churu,102,Rajasthan,Rajasthani,1928555,Marwari,50914.0,Hindi,18109.0
+Jhunjhunun,103,Rajasthan,Rajasthani,1793408,Hindi,198093.0,Marwari,40930.0
+Alwar,104,Rajasthan,Hindi,3132788,Mewati,283099.0,Rathi,34736.0
+Bharatpur,105,Rajasthan,Hindi,1621530,Brajbhasha,704985.0,Mewati,112609.0
+Dhaulpur,106,Rajasthan,Hindi,1181340,Brajbhasha,18794.0,Urdu,406.0
+Karauli,107,Rajasthan,Hindi,1448202,Urdu,7708.0,Rajasthani,114.0
+Sawai Madhopur,108,Rajasthan,Hindi,1230486,Rajasthani,42110.0,Urdu,23376.0
+Dausa,109,Rajasthan,Hindi,1418246,Rajasthani,74204.0,Dhundhari,57548.0
+Jaipur,110,Rajasthan,Rajasthani,2199591,Hindi,2977196.0,Dhundhari,542743.0
+Sikar,111,Rajasthan,Rajasthani,2479456,Hindi,37773.0,Urdu,48153.0
+Nagaur,112,Rajasthan,Rajasthani,2682316,Marwari,462179.0,Urdu,33201.0
+Jodhpur,113,Rajasthan,Rajasthani,2957844,Marwari,247132.0,Hindi,295254.0
+Jaisalmer,114,Rajasthan,Rajasthani,342101,Marwari,274319.0,,
+Barmer,115,Rajasthan,Marwari,1591907,Rajasthani,857389.0,,
+Jalor,116,Rajasthan,Marwari,1141478,Rajasthani,654277.0,,
+Sirohi,117,Rajasthan,Marwari,792476,Rajasthani,53236.0,Hindi,51437.0
+Pali,118,Rajasthan,Rajasthani,1285195,Marwari,658931.0,,
+Ajmer,119,Rajasthan,Rajasthani,1424792,Hindi,779176.0,Marwari,62453.0
+Tonk,120,Rajasthan,Rajasthani,406263,Dhundhari,519634.0,Hindi,276653.0
+Bundi,121,Rajasthan,Hara/Harauti,844551,Hindi,147153.0,Others,16092.0
+Bhilwara,122,Rajasthan,Rajasthani,1120798,Mewari,626118.0,Hindi,274989.0
+Rajsamand,123,Rajasthan,Mewari,871579,Rajasthani,170172.0,Hindi,36639.0
+Dungarpur,124,Rajasthan,Wagdi,1035037,Bagri,279951.0,Hindi,25050.0
+Banswara,125,Rajasthan,Wagdi,1576846,Bagri,44023.0,Hindi,51934.0
+Chittaurgarh,126,Rajasthan,Mewari,1027866,Hindi,179751.0,Rajasthani,194659.0
+Kota,127,Rajasthan,Hindi,769122,Hara/Harauti,911346.0,Malvi,40380.0
+Baran,128,Rajasthan,Hara/Harauti,862271,Hindi,305616.0,Urdu,5387.0
+Jhalawar,129,Rajasthan,Hindi,584529,Malvi,234548.0,Hara/Harauti,233358.0
+Udaipur,130,Rajasthan,Mewari,1352039,Wagdi,532782.0,Rajasthani,184922.0
+Pratapgarh,131,Rajasthan,Wagdi,167271,Mewari,224786.0,Rajasthani,184003.0
+Saharanpur,132,Uttar Pradesh,Hindi,2795740,Urdu,643788.0,,
+Muzaffarnagar,133,Uttar Pradesh,Hindi,3602700,Urdu,521164.0,,
+Bijnor,134,Uttar Pradesh,Hindi,2804764,Urdu,829364.0,,
+Moradabad,135,Uttar Pradesh,Hindi,3934937,Urdu,826152.0,,
+Rampur,136,Uttar Pradesh,Hindi,1725076,Urdu,523079.0,Punjabi,34474.0
+Jyotiba Phule Nagar,137,Uttar Pradesh,Hindi,1473291,Urdu,362532.0,,
+Meerut,138,Uttar Pradesh,Hindi,2977991,Urdu,428032.0,,
+Baghpat,139,Uttar Pradesh,Hindi,1260602,Urdu,33153.0,,
+Ghaziabad,140,Uttar Pradesh,Hindi,4225320,Urdu,353972.0,,
+Gautam Buddha Nagar,141,Uttar Pradesh,Hindi,1532098,Urdu,2461.0,Bengali,19701.0
+Bulandshahr,142,Uttar Pradesh,Hindi,3262333,Urdu,230369.0,,
+Aligarh,143,Uttar Pradesh,Hindi,3399752,Brajbhasha,24088.0,Urdu,189641.0
+Mahamaya Nagar,144,Uttar Pradesh,Hindi,1535921,Urdu,18073.0,Brajbhasha,5570.0
+Mathura,145,Uttar Pradesh,Hindi,1915564,Brajbhasha,566855.0,,
+Agra,146,Uttar Pradesh,Hindi,4303233,Brajbhasha,56212.0,,
+Firozabad,147,Uttar Pradesh,Hindi,2423973,Urdu,63961.0,Brajbhasha,1090.0
+Mainpuri,148,Uttar Pradesh,Hindi,1860610,Urdu,5815.0,,
+Budaun,149,Uttar Pradesh,Hindi,3359520,Urdu,318143.0,,
+Bareilly,150,Uttar Pradesh,Hindi,4033435,Urdu,377202.0,,
+Pilibhit,151,Uttar Pradesh,Hindi,1686357,Urdu,182630.0,,
+Shahjahanpur,152,Uttar Pradesh,Hindi,2741529,Urdu,196712.0,Punjabi,32327.0
+Kheri,153,Uttar Pradesh,Hindi,3749802,Urdu,118735.0,Bhojpuri,24328.0
+Sitapur,154,Uttar Pradesh,Hindi,4175470,Urdu,252025.0,,
+Hardoi,155,Uttar Pradesh,Hindi,3987645,Urdu,100136.0,,
+Unnao,156,Uttar Pradesh,Hindi,3033529,Urdu,69756.0,Chhattisgarhi,58.0
+Lucknow,157,Uttar Pradesh,Hindi,4163409,Urdu,346474.0,,
+Rae Bareli,158,Uttar Pradesh,Hindi,3209172,Awadhi,115254.0,Urdu,23064.0
+Farrukhabad,159,Uttar Pradesh,Hindi,1790275,Urdu,88252.0,,
+Kannauj,160,Uttar Pradesh,Hindi,1600677,Urdu,47643.0,Others,5320.0
+Etawah,161,Uttar Pradesh,Hindi,1553087,Urdu,27532.0,,
+Auraiya,162,Uttar Pradesh,Hindi,1359181,Urdu,18863.0,,
+Kanpur Dehat,163,Uttar Pradesh,Hindi,1777683,Urdu,16459.0,Bengali,899.0
+Kanpur Nagar,164,Uttar Pradesh,Hindi,4234664,Urdu,263375.0,,
+Jalaun,165,Uttar Pradesh,Hindi,1633170,Bundeli/Bundel_Khandi,26231.0,Urdu,14397.0
+Jhansi,166,Uttar Pradesh,Hindi,1905568,Bundeli/Bundel_Khandi,67146.0,,
+Lalitpur,167,Uttar Pradesh,Hindi,996864,Bundeli/Bundel_Khandi,213925.0,,
+Hamirpur,168,Uttar Pradesh,Hindi,733612,Bundeli/Bundel_Khandi,353494.0,,
+Mahoba,169,Uttar Pradesh,Hindi,573734,Bundeli/Bundel_Khandi,294619.0,,
+Banda,170,Uttar Pradesh,Hindi,1724093,Bundeli/Bundel_Khandi,24794.0,Urdu,23152.0
+Chitrakoot,171,Uttar Pradesh,Hindi,680442,Bundeli/Bundel_Khandi,302714.0,,
+Fatehpur,172,Uttar Pradesh,Hindi,2566474,Urdu,65600.0,,
+Pratapgarh,173,Uttar Pradesh,Hindi,2911957,Awadhi,158370.0,Urdu,49313.0
+Kaushambi,174,Uttar Pradesh,Hindi,1576776,Urdu,17670.0,,
+Allahabad,175,Uttar Pradesh,Hindi,5651508,Urdu,114448.0,Awadhi,97965.0
+Bara Banki,176,Uttar Pradesh,Hindi,2984773,Urdu,193329.0,Awadhi,39028.0
+Faizabad,177,Uttar Pradesh,Hindi,2050978,Awadhi,329557.0,Urdu,31515.0
+Ambedkar Nagar,178,Uttar Pradesh,Hindi,1905077,Urdu,157679.0,Awadhi,132237.0
+Sultanpur,179,Uttar Pradesh,Hindi,2781822,Awadhi,842421.0,Urdu,83543.0
+Bahraich,180,Uttar Pradesh,Hindi,3116657,Urdu,244818.0,,
+Shrawasti,181,Uttar Pradesh,Hindi,978294,Awadhi,124837.0,,
+Balrampur,182,Uttar Pradesh,Hindi,1874212,Awadhi,141320.0,Urdu,49640.0
+Gonda,183,Uttar Pradesh,Hindi,2782507,Awadhi,550776.0,,
+Siddharthnagar,184,Uttar Pradesh,Hindi,2060575,Bhojpuri,198561.0,Awadhi,89133.0
+Basti,185,Uttar Pradesh,Hindi,1977612,Awadhi,349848.0,Bhojpuri,21217.0
+Sant Kabir Nagar,186,Uttar Pradesh,Bhojpuri,920577,Hindi,624655.0,,
+Mahrajganj,187,Uttar Pradesh,Bhojpuri,1590083,Hindi,1064576.0,,
+Gorakhpur,188,Uttar Pradesh,Bhojpuri,2278689,Hindi,2064060.0,,
+Kushinagar,189,Uttar Pradesh,Bhojpuri,2768578,Hindi,776590.0,,
+Deoria,190,Uttar Pradesh,Bhojpuri,2660710,Hindi,392911.0,,
+Azamgarh,191,Uttar Pradesh,Bhojpuri,2564713,Hindi,1573895.0,Urdu,88545.0
+Mau,192,Uttar Pradesh,Bhojpuri,1175527,Hindi,730425.0,,
+Ballia,193,Uttar Pradesh,Bhojpuri,2655437,Hindi,549938.0,,
+Jaunpur,194,Uttar Pradesh,Hindi,4163927,Bhojpuri,136658.0,Awadhi,30674.0
+Ghazipur,195,Uttar Pradesh,Bhojpuri,2395139,Hindi,1121377.0,,
+Chandauli,196,Uttar Pradesh,Hindi,1582910,Bhojpuri,343718.0,,
+Varanasi,197,Uttar Pradesh,Hindi,2801256,Bhojpuri,723696.0,,
+Sant Ravidas Nagar (Bhadohi),198,Uttar Pradesh,Hindi,1047672,Awadhi,188067.0,Bhojpuri,202609.0
+Mirzapur,199,Uttar Pradesh,Hindi,2021302,Bhojpuri,459477.0,,
+Sonbhadra,200,Uttar Pradesh,Hindi,1562925,Bhojpuri,271341.0,,
+Etah,201,Uttar Pradesh,Hindi,1757398,Urdu,11614.0,Brajbhasha,1078.0
+Kanshiram Nagar,202,Uttar Pradesh,Hindi,1313885,Urdu,118739.0,,
+Pashchim Champaran,203,Bihar,Bhojpuri,3614989,Hindi,84078.0,Urdu,62020.0
+Purba Champaran,204,Bihar,Bhojpuri,4215755,Hindi,191665.0,Urdu,234052.0
+Sheohar,205,Bihar,Others,450821,Hindi,150758.0,,
+Sitamarhi,206,Bihar,Hindi,1098051,Others,1597770.0,Urdu,149083.0
+Madhubani,207,Bihar,Maithili,3772380,Urdu,573556.0,Hindi,7094.0
+Supaul,208,Bihar,Maithili,1699066,Urdu,121470.0,Hindi,203285.0
+Araria,209,Bihar,Hindi,676538,Urdu,531747.0,Others,353290.0
+Kishanganj,210,Bihar,Surjapuri,720239,Urdu,524344.0,Bengali,30424.0
+Purnia,211,Bihar,Hindi,958565,Urdu,507052.0,Others,482312.0
+Katihar,212,Bihar,Others,652638,Hindi,468265.0,Bengali,225168.0
+Madhepura,213,Bihar,Maithili,760947,Hindi,734917.0,Others,306696.0
+Saharsa,214,Bihar,Maithili,1304979,Hindi,372143.0,Urdu,28481.0
+Darbhanga,215,Bihar,Maithili,2864246,Urdu,793052.0,Hindi,21821.0
+Muzaffarpur,216,Bihar,Others,1873145,Hindi,2264323.0,Bhojpuri,102627.0
+Gopalganj,217,Bihar,Bhojpuri,2461733,Hindi,32408.0,Urdu,35316.0
+Siwan,218,Bihar,Bhojpuri,3109288,Urdu,139059.0,Hindi,11173.0
+Saran,219,Bihar,Bhojpuri,3681550,Hindi,163400.0,Urdu,29277.0
+Vaishali,220,Bihar,Others,2442277,Hindi,877160.0,,
+Samastipur,221,Bihar,Hindi,2218591,Maithili,1264721.0,Urdu,112566.0
+Begusarai,222,Bihar,Hindi,2369547,Urdu,191904.0,Others,148345.0
+Khagaria,223,Bihar,Others,1074408,Hindi,488041.0,,
+Bhagalpur,224,Bihar,Others,1912045,Hindi,708394.0,Urdu,9547.0
+Banka,225,Bihar,Others,1669465,Hindi,112182.0,Santali,56727.0
+Munger,226,Bihar,Hindi,844663,Others,417995.0,,
+Lakhisarai,227,Bihar,Magadhi/Magahi,470050,Hindi,241308.0,Others,190955.0
+Sheikhpura,228,Bihar,Hindi,362047,Magadhi/Magahi,242869.0,,
+Nalanda,229,Bihar,Magadhi/Magahi,1619113,Hindi,1072778.0,,
+Patna,230,Bihar,Magadhi/Magahi,2705883,Hindi,2491398.0,Bhojpuri,71191.0
+Bhojpur,231,Bihar,Bhojpuri,2511647,Hindi,125404.0,Urdu,22660.0
+Buxar,232,Bihar,Bhojpuri,1664969,Hindi,23448.0,Urdu,8285.0
+Kaimur (Bhabua),233,Bihar,Bhojpuri,1472657,Hindi,106872.0,Urdu,10432.0
+Rohtas,234,Bihar,Bhojpuri,2595064,Hindi,197565.0,Urdu,42568.0
+Aurangabad,235,Bihar,Magadhi/Magahi,1770059,Hindi,626774.0,,
+Gaya,236,Bihar,Magadhi/Magahi,1816894,Hindi,2245341.0,Urdu,10446.0
+Nawada,237,Bihar,Magadhi/Magahi,1232267,Hindi,800355.0,Urdu,15751.0
+Jamui,238,Bihar,Hindi,1291556,Urdu,100959.0,Others,96062.0
+Jehanabad,239,Bihar,Magadhi/Magahi,742724,Hindi,326435.0,,
+Arwal,240,Bihar,Magadhi/Magahi,606459,Hindi,50073.0,Urdu,13439.0
+North  District,241,Sikkim,Nepali,10147,Lepcha,12671.0,Bhotia,2603.0
+West District,242,Sikkim,Nepali,79322,Limbu,24886.0,,
+South District,243,Sikkim,Nepali,106701,Hindi,3910.0,Bhotia,3870.0
+East District,244,Sikkim,Nepali,186001,Hindi,23585.0,Bhotia,3180.0
+Tawang,245,Arunachal Pradesh,Bhotia,29918,Monpa,2598.0,Nepali,1204.0
+West Kameng,246,Arunachal Pradesh,Nepali,14333,Bhotia,24906.0,Assamese,683.0
+East Kameng,247,Arunachal Pradesh,Nissi/Dafla,64537,Nepali,1724.0,Others,1217.0
+Papum Pare,248,Arunachal Pradesh,Nissi/Dafla,85056,Nepali,343.0,Bengali,15752.0
+Upper Subansiri,249,Arunachal Pradesh,Tagin,57640,Nissi/Dafla,7630.0,Talgalo,8556.0
+West Siang,250,Arunachal Pradesh,Talgalo,45250,Adi_Gallong/Gallong,11730.0,Others,10725.0
+East Siang,251,Arunachal Pradesh,Adi,51322,Nepali,8807.0,Adi_Gallong/Gallong,4901.0
+Upper Siang,252,Arunachal Pradesh,Adi,21327,Nepali,1174.0,Bhotia,2306.0
+Changlang,253,Arunachal Pradesh,Others,24257,Nepali,4785.0,Chakma,40205.0
+Tirap,254,Arunachal Pradesh,Wancho,56444,Nocte,26260.0,Bengali,1320.0
+Lower Subansiri,255,Arunachal Pradesh,Nissi/Dafla,37981,Assamese,667.0,Nepali,550.0
+Kurung Kumey,256,Arunachal Pradesh,Nissi/Dafla,87790,Others,1913.0,Nepali,68.0
+Dibang Valley,257,Arunachal Pradesh,Others,5467,Nepali,1125.0,Mishmi,34.0
+Lower Dibang Valley,258,Arunachal Pradesh,Nepali,12490,Adi,10326.0,Others,2970.0
+Lohit,259,Arunachal Pradesh,Nepali,17853,Assamese,16600.0,Adi,6676.0
+Anjaw,260,Arunachal Pradesh,Mishmi,8630,Others,6432.0,Others,470.0
+Mon,261,Nagaland,Konyak,236640,Bengali,2398.0,Hindi,105.0
+Mokokchung,262,Nagaland,Chungli,67535,Mongsen,45991.0,Ao,34791.0
+Zunheboto,263,Nagaland,Sema,613,Bengali,456.0,Ao,311.0
+Wokha,264,Nagaland,Lotha,150506,Nepali,158.0,Bengali,1040.0
+Dimapur,265,Nagaland,Bengali,56234,Nepali,2072.0,Ao,40304.0
+Phek,266,Nagaland,Chakru/Chokri,87761,Khezha,32546.0,Pochury,19948.0
+Tuensang,267,Nagaland,Chang,59846,Yimchungre,35768.0,Khiemnungan,53701.0
+Longleng,268,Nagaland,Phom,47294,Assamese,107.0,Konyak,870.0
+Kiphire,269,Nagaland,Sangtam,33849,Yimchungre,11856.0,Tikhir,8043.0
+Kohima,270,Nagaland,Others,96478,Angami,17034.0,Rengma,55399.0
+Peren,271,Nagaland,Zeliang,54467,Kuki,9513.0,Zemi,8001.0
+Senapati,272,Manipur,Thado,81883,Nepali,29357.0,Paola,120507.0
+Tamenglong,273,Manipur,Rongmei,51562,Kabui,28276.0,Liangmei,24643.0
+Churachandpur,274,Manipur,Paite,51879,Thado,67282.0,Vaiphei,8058.0
+Bishnupur,275,Manipur,Manipuri,232351,Kabui,1538.0,Bengali,536.0
+Thoubal,276,Manipur,Manipuri,415654,Nepali,1584.0,Kabui,438.0
+Imphal West,277,Manipur,Manipuri,470852,Kabui,8577.0,Nepali,9208.0
+Imphal East,278,Manipur,Manipuri,388582,Bengali,22267.0,Kabui,5068.0
+Ukhrul,279,Manipur,Tangkhul,163582,Thado,6038.0,Khezha,1944.0
+Chandel,280,Manipur,Thado,50341,Anal,23070.0,Maring,20126.0
+Mamit,281,Mizoram,Lushai/Mizo,54073,Kokbarak,7261.0,Chakma,7260.0
+Kolasib,282,Mizoram,Lushai/Mizo,63750,Hmar,6083.0,Reang,552.0
+Aizawl,283,Mizoram,Lushai/Mizo,361507,Hmar,10130.0,Nepali,5913.0
+Champhai,284,Mizoram,Lushai/Mizo,106559,Paite,17475.0,Bengali,8.0
+Serchhip,285,Mizoram,Lushai/Mizo,63473,Hindi,538.0,Khortha/Khotta,15.0
+Lunglei,286,Mizoram,Lushai/Mizo,115894,Chakma,32699.0,Hindi,1753.0
+Lawngtlai,287,Mizoram,Lushai/Mizo,23096,Chakma,43575.0,Pawi,24671.0
+Saiha,288,Mizoram,Mara,37490,Lushai/Mizo,8594.0,Others,1051.0
+West Tripura,289,Tripura,Kokbarak,403163,Bengali,1216815.0,Munda,2307.0
+South Tripura,290,Tripura,Kokbarak,242579,Bengali,506235.0,Mogh,11470.0
+Dhalai,291,Tripura,Kokbarak,144478,Bengali,119961.0,Chakma,23887.0
+North Tripura,292,Tripura,Bengali,461554,Kokbarak,79585.0,Reang,10016.0
+West Garo Hills,293,Meghalaya,Garo,412971,Bengali,121267.0,Haijong/Hajong,9944.0
+East Garo Hills,294,Meghalaya,Garo,297922,Assamese,7471.0,Bengali,1907.0
+South Garo Hills,295,Meghalaya,Garo,130608,Others,4208.0,Bengali,853.0
+West Khasi Hills,296,Meghalaya,Khasi,196246,Garo,48396.0,Reang,2004.0
+Ribhoi,297,Meghalaya,Khasi,174550,Others,14030.0,Assamese,4714.0
+East Khasi Hills,298,Meghalaya,Khasi,599472,Garo,9615.0,Bengali,43809.0
+Jaintia Hills,299,Meghalaya,Pnar/Synteng,311396,Khasi,22659.0,War,33299.0
+Kokrajhar,300,Assam,Bodo/Boro,237570,Assamese,105321.0,Bengali,75791.0
+Dhubri,301,Assam,Assamese,825607,Others,426388.0,Bengali,344827.0
+Goalpara,302,Assam,Assamese,515927,Bengali,276124.0,Garo,18066.0
+Barpeta,303,Assam,Assamese,612247,Bengali,1043627.0,Bodo/Boro,6192.0
+Morigaon,304,Assam,Assamese,699107,Bengali,212488.0,,
+Nagaon,305,Assam,Assamese,1774418,Bengali,805361.0,,
+Sonitpur,306,Assam,Assamese,693889,Bengali,186227.0,Sadan/Sadri,151659.0
+Lakhimpur,307,Assam,Assamese,602339,Miri/Mishing,159406.0,Bengali,106899.0
+Dhemaji,308,Assam,Assamese,268820,Miri/Mishing,223204.0,,
+Tinsukia,309,Assam,Assamese,634697,Sadan/Sadri,137686.0,Nepali,76717.0
+Dibrugarh,310,Assam,Assamese,1008158,Sadan/Sadri,54337.0,Hindi,49459.0
+Sivasagar,311,Assam,Assamese,969831,Sadan/Sadri,38139.0,Miri/Mishing,18136.0
+Jorhat,312,Assam,Assamese,910784,Miri/Mishing,82388.0,Bengali,30323.0
+Golaghat,313,Assam,Assamese,836416,Miri/Mishing,24443.0,Bengali,31163.0
+Karbi Anglong,314,Assam,Karbi/Mikir,437203,Bengali,83423.0,Bhojpuri,30623.0
+Dima Hasao,315,Assam,Dimasa,73252,Bengali,19307.0,Zemi,12711.0
+Cachar,316,Assam,Bengali,1304566,Hindi,113362.0,Manipuri,63092.0
+Karimganj,317,Assam,Bengali,1067063,Hindi,68390.0,Assamese,2322.0
+Hailakandi,318,Assam,Bengali,558045,Hindi,51041.0,,
+Bongaigaon,319,Assam,Assamese,358381,Bengali,320274.0,,
+Chirang,320,Assam,Bodo/Boro,180675,Assamese,35937.0,Bengali,117582.0
+Kamrup,321,Assam,Assamese,1129161,Bengali,292953.0,Bodo/Boro,3583.0
+Kamrup Metropolitan,322,Assam,Assamese,725410,Bengali,254974.0,Hindi,4016.0
+Nalbari,323,Assam,Assamese,662678,Bodo/Boro,5979.0,Bengali,81839.0
+Baksa,324,Assam,Assamese,354765,Bodo/Boro,225624.0,Bengali,147844.0
+Darrang,325,Assam,Assamese,457696,Bengali,449298.0,Bodo/Boro,1253.0
+Udalguri,326,Assam,Bodo/Boro,209787,Bengali,87819.0,Assamese,131321.0
+Darjiling,327,West Bengal,Nepali,822811,Bengali,422823.0,Sadan/Sadri,36561.0
+Jalpaiguri,328,West Bengal,Bengali,2202870,Sadan/Sadri,547854.0,Nepali,151406.0
+Koch Bihar,329,West Bengal,Bengali,2672235,Others,48799.0,Rajbangsi,12177.0
+Uttar Dinajpur,330,West Bengal,Bengali,1981723,Santali,69920.0,Surjapuri,271141.0
+Dakshin Dinajpur,331,West Bengal,Bengali,1406222,Santali,155927.0,Hindi,6491.0
+Maldah,332,West Bengal,Bengali,3623532,Khortha/Khotta,81758.0,Santali,160042.0
+Murshidabad,333,West Bengal,Bengali,6996585,Hindi,14154.0,Santali,39781.0
+Birbhum,334,West Bengal,Bengali,3235405,Santali,206681.0,Hindi,20596.0
+Barddhaman,335,West Bengal,Bengali,6167508,Santali,232291.0,Hindi,828496.0
+Nadia,336,West Bengal,Bengali,5064911,Hindi,29531.0,Sadan/Sadri,21014.0
+North Twenty Four Parganas,337,West Bengal,Bengali,8900047,Hindi,766098.0,Sadan/Sadri,10831.0
+Hugli,338,West Bengal,Bengali,4828443,Santali,120665.0,Hindi,392001.0
+Bankura,339,West Bengal,Bengali,3260949,Santali,285149.0,Hindi,4994.0
+Puruliya,340,West Bengal,Bengali,2360488,Santali,301174.0,Kurmali_Thar,107733.0
+Haora,341,West Bengal,Bengali,4121879,Hindi,528300.0,Santali,1722.0
+Kolkata,342,West Bengal,Bengali,2763206,Hindi,997966.0,,
+South Twenty Four Parganas,343,West Bengal,Bengali,7983742,Hindi,134654.0,Sadan/Sadri,11892.0
+Paschim Medinipur,344,West Bengal,Bengali,5040937,Santali,472553.0,Hindi,56146.0
+Purba Medinipur,345,West Bengal,Bengali,5008219,Hindi,25275.0,Khortha/Khotta,13042.0
+Garhwa,346,Jharkhand,Hindi,713052,Magadhi/Magahi,330948.0,Bhojpuri,76400.0
+Chatra,347,Jharkhand,Hindi,408900,Khortha/Khotta,402064.0,Magadhi/Magahi,98980.0
+Kodarma,348,Jharkhand,Hindi,311386,Khortha/Khotta,354402.0,Urdu,5497.0
+Giridih,349,Jharkhand,Khortha/Khotta,1680250,Hindi,310242.0,Santali,132396.0
+Deoghar,350,Jharkhand,Khortha/Khotta,975596,Santali,99297.0,Hindi,149313.0
+Godda,351,Jharkhand,Others,614340,Santali,182152.0,Urdu,79527.0
+Sahibganj,352,Jharkhand,Santali,211728,Hindi,162531.0,Bengali,300129.0
+Pakur,353,Jharkhand,Santali,326315,Bengali,322670.0,Khortha/Khotta,51291.0
+Dhanbad,354,Jharkhand,Khortha/Khotta,606134,Bengali,310444.0,Hindi,673448.0
+Bokaro,355,Jharkhand,Khortha/Khotta,953493,Santali,118768.0,Hindi,239044.0
+Lohardaga,356,Jharkhand,Kurukh/Oraon,179899,Sadan/Sadri,93034.0,Hindi,33152.0
+Purbi Singhbhum,357,Jharkhand,Bengali,789616,Santali,299642.0,Hindi,358916.0
+Palamu,358,Jharkhand,Hindi,1270514,Magadhi/Magahi,447244.0,Urdu,45873.0
+Latehar,359,Jharkhand,Hindi,288434,Sadan/Sadri,170568.0,Kurukh/Oraon,70641.0
+Hazaribagh,360,Jharkhand,Khortha/Khotta,1068147,Hindi,374367.0,Santali,45191.0
+Ramgarh,361,Jharkhand,Khortha/Khotta,537648,Hindi,157785.0,Urdu,21667.0
+Dumka,362,Jharkhand,Santali,518621,Khortha/Khotta,399955.0,Hindi,43215.0
+Jamtara,363,Jharkhand,Santali,228311,Bengali,223617.0,Khortha/Khotta,170737.0
+Ranchi,364,Jharkhand,Sadan/Sadri,363746,Panch_Pargania,195938.0,Nagpuria,174981.0
+Khunti,365,Jharkhand,Mundari,328305,Sadan/Sadri,84811.0,Nagpuria,19969.0
+Gumla,366,Jharkhand,Kurukh/Oraon,299067,Nagpuria,241376.0,Sadan/Sadri,169035.0
+Simdega,367,Jharkhand,Sadan/Sadri,294037,Kharia,67136.0,Mundari,109762.0
+Pashchimi Singhbhum,368,Jharkhand,Ho,815088,Odia,230579.0,Mundari,121102.0
+Saraikela-Kharsawan,369,Jharkhand,Bengali,454094,Santali,87924.0,Odia,50228.0
+Bargarh,370,Odisha,Sambalpuri,1128991,Odia,257190.0,,
+Jharsuguda,371,Odisha,Odia,158909,Sambalpuri,214132.0,Hindi,42370.0
+Sambalpur,372,Odisha,Odia,545701,Sambalpuri,262480.0,Kisan,24773.0
+Debagarh,373,Odisha,Odia,280879,Munda,6925.0,Ho,1974.0
+Sundargarh,374,Odisha,Odia,866363,Sadan/Sadri,238508.0,Munda,101387.0
+Kendujhar,375,Odisha,Odia,1419884,Ho,114146.0,Santali,31190.0
+Mayurbhanj,376,Odisha,Odia,1322532,Santali,577110.0,Ho,129760.0
+Baleshwar,377,Odisha,Odia,2042656,Santali,72287.0,Urdu,52295.0
+Bhadrak,378,Odisha,Odia,1364023,Urdu,96602.0,Bengali,16623.0
+Kendrapara,379,Odisha,Odia,1317420,Urdu,44542.0,Bengali,67165.0
+Jagatsinghapur,380,Odisha,Odia,1049510,Urdu,40369.0,Bengali,24054.0
+Cuttack,381,Odisha,Odia,2397597,Urdu,119459.0,Munda,7228.0
+Jajapur,382,Odisha,Odia,1649211,Urdu,86163.0,Ho,31026.0
+Dhenkanal,383,Odisha,Odia,1147087,Hindi,1227.0,Munda,11783.0
+Anugul,384,Odisha,Odia,1216407,Hindi,12862.0,Ho,16022.0
+Nayagarh,385,Odisha,Odia,954012,Kui,5780.0,Hindi,357.0
+Khordha,386,Odisha,Odia,2074212,Urdu,17948.0,Telugu,34796.0
+Puri,387,Odisha,Odia,1614787,Urdu,38588.0,Telugu,30523.0
+Ganjam,388,Odisha,Odia,3221641,Telugu,245171.0,Savara,14397.0
+Gajapati,389,Odisha,Odia,239593,Savara,167339.0,Telugu,82837.0
+Kandhamal,390,Odisha,Odia,388708,Kui,334357.0,Hindi,458.0
+Baudh,391,Odisha,Odia,347169,Sambalpuri,90626.0,Hindi,184.0
+Subarnapur,392,Odisha,Sambalpuri,364067,Odia,239788.0,,
+Balangir,393,Odisha,Odia,1285948,Sambalpuri,334673.0,,
+Nuapada,394,Odisha,Odia,354144,Sambalpuri,129594.0,Chhattisgarhi,81366.0
+Kalahandi,395,Odisha,Odia,1497949,Hindi,7738.0,Kui,49771.0
+Rayagada,396,Odisha,Odia,403048,Kui,303545.0,Savara,78969.0
+Nabarangapur,397,Odisha,Odia,835577,Desia,20927.0,Bhatri,67327.0
+Koraput,398,Odisha,Odia,742786,Proja_(Ori),83634.0,Desia,148884.0
+Malkangiri,399,Odisha,Odia,195334,Koya,127585.0,Bengali,93126.0
+Koriya,400,Chhattisgarh,Hindi,209763,Surgujia,296206.0,Bagheli/Baghel_Khandi,25451.0
+Surguja,401,Chhattisgarh,Surgujia,1424267,Kurukh/Oraon,133286.0,Hindi,153146.0
+Jashpur,402,Chhattisgarh,Kurukh/Oraon,234812,Sadan/Sadri,383723.0,Chhattisgarhi,78198.0
+Raigarh,403,Chhattisgarh,Chhattisgarhi,1129571,Odia,101825.0,Hindi,78213.0
+Korba,404,Chhattisgarh,Chhattisgarhi,997618,Hindi,140103.0,,
+Janjgir - Champa,405,Chhattisgarh,Chhattisgarhi,1536944,Hindi,58150.0,Kurukh/Oraon,1443.0
+Bilaspur,406,Chhattisgarh,Chhattisgarhi,2224965,Hindi,330567.0,Others,3865.0
+Kabeerdham,407,Chhattisgarh,Chhattisgarhi,790768,Hindi,16449.0,Others,3161.0
+Rajnandgaon,408,Chhattisgarh,Chhattisgarhi,1300045,Hindi,135950.0,Gondi,28737.0
+Durg,409,Chhattisgarh,Chhattisgarhi,2558243,Hindi,486649.0,,
+Raipur,410,Chhattisgarh,Chhattisgarhi,2971709,Hindi,620576.0,Odia,136025.0
+Mahasamund,411,Chhattisgarh,Chhattisgarhi,775370,Odia,184946.0,Hindi,17798.0
+Dhamtari,412,Chhattisgarh,Chhattisgarhi,740870,Hindi,39351.0,Others,3448.0
+Uttar Bastar Kanker,413,Chhattisgarh,Chhattisgarhi,439091,Gondi,124820.0,Hindi,25435.0
+Bastar,414,Chhattisgarh,Halabi,522088,Gondi,277728.0,Bhatri,214858.0
+Narayanpur,415,Chhattisgarh,Gondi,75236,Halabi,24197.0,Santali,14645.0
+Dakshin Bastar Dantewada,416,Chhattisgarh,Gondi,308694,Halabi,77491.0,Dorli,23265.0
+Bijapur,417,Chhattisgarh,Gondi,133164,Telugu,37046.0,Dorli,20982.0
+Sheopur,418,Madhya Pradesh,Hindi,648443,Urdu,13525.0,Handuri,7236.0
+Morena,419,Madhya Pradesh,Hindi,1962284,Urdu,1128.0,Brajbhasha,608.0
+Bhind,420,Madhya Pradesh,Hindi,1695946,Urdu,677.0,Bengali,73.0
+Gwalior,421,Madhya Pradesh,Hindi,1962347,Punjabi,11984.0,Marathi,11946.0
+Datia,422,Madhya Pradesh,Hindi,716405,Bundeli/Bundel_Khandi,64222.0,,
+Shivpuri,423,Madhya Pradesh,Hindi,1665914,Bundeli/Bundel_Khandi,40168.0,Urdu,6355.0
+Tikamgarh,424,Madhya Pradesh,Bundeli/Bundel_Khandi,1127480,Hindi,311917.0,,
+Chhatarpur,425,Madhya Pradesh,Bundeli/Bundel_Khandi,1312154,Hindi,435163.0,,
+Panna,426,Madhya Pradesh,Hindi,702245,Bundeli/Bundel_Khandi,302255.0,,
+Sagar,427,Madhya Pradesh,Hindi,1317138,Bundeli/Bundel_Khandi,1021100.0,,
+Damoh,428,Madhya Pradesh,Hindi,867630,Bundeli/Bundel_Khandi,382716.0,,
+Satna,429,Madhya Pradesh,Hindi,1696187,Bagheli/Baghel_Khandi,476428.0,,
+Rewa,430,Madhya Pradesh,Bagheli/Baghel_Khandi,1537663,Hindi,812277.0,,
+Umaria,431,Madhya Pradesh,Hindi,538916,Bagheli/Baghel_Khandi,93036.0,,
+Neemuch,432,Madhya Pradesh,Malvi,376475,Hindi,326421.0,Mewari,28566.0
+Mandsaur,433,Madhya Pradesh,Hindi,658535,Malvi,651145.0,,
+Ratlam,434,Madhya Pradesh,Hindi,602157,Malvi,600324.0,Bhili/Bhilodi,171604.0
+Ujjain,435,Madhya Pradesh,Malvi,945338,Hindi,939750.0,,
+Shajapur,436,Madhya Pradesh,Hindi,1177371,Malvi,304150.0,,
+Dewas,437,Madhya Pradesh,Hindi,868070,Malvi,509594.0,Gondi,11384.0
+Dhar,438,Madhya Pradesh,Hindi,1112276,Malvi,337935.0,Nimadi,276443.0
+Indore,439,Madhya Pradesh,Hindi,2339330,Malvi,397326.0,Marathi,110190.0
+Khargone (West Nimar),440,Madhya Pradesh,Nimadi,925662,Hindi,274554.0,Barel,181034.0
+Barwani,441,Madhya Pradesh,Barel,683708,Nimadi,311311.0,Bhilali,52306.0
+Rajgarh,442,Madhya Pradesh,Hindi,1152865,Malvi,374033.0,,
+Vidisha,443,Madhya Pradesh,Hindi,1385368,Urdu,66705.0,,
+Bhopal,444,Madhya Pradesh,Hindi,2007656,Urdu,160343.0,,
+Sehore,445,Madhya Pradesh,Hindi,1250776,Urdu,26361.0,Malvi,4065.0
+Raisen,446,Madhya Pradesh,Hindi,1295396,Urdu,26482.0,,
+Betul,447,Madhya Pradesh,Hindi,650238,Gondi,390093.0,Korku,100707.0
+Harda,448,Madhya Pradesh,Hindi,512463,Korku,36881.0,Marwari,1211.0
+Hoshangabad,449,Madhya Pradesh,Hindi,1192034,Korku,11453.0,Gondi,4516.0
+Katni,450,Madhya Pradesh,Hindi,1265891,Sindhi,20075.0,Punjabi,172.0
+Jabalpur,451,Madhya Pradesh,Hindi,2320663,Urdu,47190.0,Gondi,3561.0
+Narsimhapur,452,Madhya Pradesh,Hindi,1081547,Bundeli/Bundel_Khandi,5260.0,Punjabi,253.0
+Dindori,453,Madhya Pradesh,Hindi,583219,Gondi,99280.0,,
+Mandla,454,Madhya Pradesh,Hindi,935331,Gondi,107805.0,,
+Chhindwara,455,Madhya Pradesh,Hindi,1630441,Marathi,200383.0,Gondi,83407.0
+Seoni,456,Madhya Pradesh,Hindi,1196517,Gondi,84409.0,Urdu,14612.0
+Balaghat,457,Madhya Pradesh,Hindi,619850,Marathi,193574.0,Chhattisgarhi,86339.0
+Guna,458,Madhya Pradesh,Hindi,1233917,Urdu,2298.0,Punjabi,1329.0
+Ashoknagar,459,Madhya Pradesh,Hindi,833019,Punjabi,4180.0,Urdu,3924.0
+Shahdol,460,Madhya Pradesh,Hindi,1011866,Bagheli/Baghel_Khandi,34727.0,Gondi,3653.0
+Anuppur,461,Madhya Pradesh,Hindi,688517,Bagheli/Baghel_Khandi,20888.0,Gondi,14211.0
+Sidhi,462,Madhya Pradesh,Hindi,714421,Bagheli/Baghel_Khandi,401809.0,,
+Singrauli,463,Madhya Pradesh,Hindi,1055585,Bagheli/Baghel_Khandi,51304.0,Others,9788.0
+Jhabua,464,Madhya Pradesh,Bhili/Bhilodi,842530,Hindi,79743.0,Malvi,31889.0
+Alirajpur,465,Madhya Pradesh,Bhilali,391172,Bhili/Bhilodi,258061.0,,
+Khandwa (East Nimar),466,Madhya Pradesh,Hindi,443349,Nimadi,514802.0,Korku,109677.0
+Burhanpur,467,Madhya Pradesh,Marathi,204173,Urdu,119998.0,Korku,62085.0
+Kachchh,468,Gujarat,Gujarati,1148926,Kachchhi,652393.0,Hindi,63045.0
+Banas Kantha,469,Gujarat,Gujarati,3006520,Hindi,18199.0,Marwari,14959.0
+Patan,470,Gujarat,Gujarati,1321668,Hindi,14511.0,Sindhi,1000.0
+Mahesana,471,Gujarat,Gujarati,1985766,Hindi,35381.0,Sindhi,809.0
+Sabar Kantha,472,Gujarat,Gujarati,2376638,Hindi,36321.0,,
+Gandhinagar,473,Gujarat,Gujarati,1307451,Hindi,56221.0,,
+Ahmadabad,474,Gujarat,Gujarati,5395860,Hindi,1128111.0,,
+Surendranagar,475,Gujarat,Gujarati,1735934,Hindi,10885.0,,
+Rajkot,476,Gujarat,Gujarati,3660430,Hindi,62650.0,Marathi,8211.0
+Jamnagar,477,Gujarat,Gujarati,1938623,Kachchhi,123007.0,Hindi,4574.0
+Porbandar,478,Gujarat,Gujarati,566136,Hindi,6742.0,Sindhi,1153.0
+Junagadh,479,Gujarat,Gujarati,2656277,Hindi,23156.0,Sindhi,10993.0
+Amreli,480,Gujarat,Gujarati,1498976,Hindi,9787.0,Sindhi,310.0
+Bhavnagar,481,Gujarat,Gujarati,2818928,Hindi,18951.0,Sindhi,17418.0
+Anand,482,Gujarat,Gujarati,2022808,Hindi,40299.0,Urdu,8390.0
+Kheda,483,Gujarat,Gujarati,2238908,Hindi,43256.0,,
+Panch Mahals,484,Gujarat,Gujarati,2307553,Hindi,16508.0,Urdu,39375.0
+Dohad,485,Gujarat,Gujarati,2048134,Hindi,3902.0,Bhili/Bhilodi,45136.0
+Vadodara,486,Gujarat,Gujarati,3590052,Hindi,309617.0,,
+Narmada,487,Gujarat,Gujarati,404226,Hindi,6308.0,Vasava,82628.0
+Bharuch,488,Gujarat,Gujarati,1396120,Hindi,95663.0,Vasava,4123.0
+The Dangs,489,Gujarat,Dangi,135945,Gujarati,74273.0,,
+Navsari,490,Gujarat,Gujarati,1188450,Hindi,41442.0,Marathi,22893.0
+Valsad,491,Gujarat,Gujarati,1206316,Hindi,192149.0,Kokna/Kokni/Kukna,50853.0
+Surat,492,Gujarat,Gujarati,3646873,Hindi,1186542.0,Chodhari,42159.0
+Tapi,493,Gujarat,Gujarati,372177,Gamti/Gavit,112277.0,Vasava,61726.0
+Diu,494,Daman & Diu,Gujarati,51023,Hindi,529.0,,
+Daman,495,Daman & Diu,Gujarati,72153,Hindi,70355.0,,
+Dadra & Nagar Haveli,496,Dadra & Nagar Haveli,Varli,97940,Gujarati,73412.0,,
+Nandurbar,497,Maharashtra,Bhili/Bhilodi,749152,Marathi,224462.0,Mawchi,70280.0
+Dhule,498,Maharashtra,Marathi,691545,Ahirani,495327.0,Pawri,115693.0
+Jalgaon,499,Maharashtra,Marathi,2683257,Ahirani,506549.0,Urdu,182227.0
+Buldana,500,Maharashtra,Marathi,2034128,Urdu,274724.0,Banjari,10503.0
+Akola,501,Maharashtra,Marathi,1276674,Urdu,294860.0,Banjari,21214.0
+Washim,502,Maharashtra,Marathi,908345,Urdu,76771.0,Banjari,71128.0
+Amravati,503,Maharashtra,Marathi,1916503,Urdu,308652.0,Hindi,33327.0
+Wardha,504,Maharashtra,Marathi,1141743,Hindi,89484.0,,
+Nagpur,505,Maharashtra,Marathi,3262502,Hindi,801973.0,Gondi,24287.0
+Bhandara,506,Maharashtra,Marathi,1118475,Hindi,48321.0,,
+Gondiya,507,Maharashtra,Marathi,969049,Hindi,108751.0,Pawari/Powari,29033.0
+Gadchiroli,508,Maharashtra,Marathi,575973,Gondi,134417.0,Santali,77924.0
+Chandrapur,509,Maharashtra,Marathi,1843349,Hindi,143411.0,Gondi,12077.0
+Yavatmal,510,Maharashtra,Marathi,1872226,Banjari,311413.0,Hindi,54998.0
+Nanded,511,Maharashtra,Marathi,2536075,Urdu,267905.0,Banjari,106344.0
+Hingoli,512,Maharashtra,Marathi,982671,Urdu,47815.0,Banjari,25651.0
+Parbhani,513,Maharashtra,Marathi,1438509,Urdu,219748.0,,
+Jalna,514,Maharashtra,Marathi,1491966,Urdu,115010.0,Hindi,65275.0
+Aurangabad,515,Maharashtra,Marathi,2575980,Urdu,489709.0,Hindi,56790.0
+Nashik,516,Maharashtra,Marathi,4418827,Hindi,273193.0,Urdu,441535.0
+Thane,517,Maharashtra,Marathi,5839292,Hindi,1633165.0,Varli,178794.0
+Mumbai Suburban,518,Maharashtra,Marathi,3288406,Hindi,2373845.0,,
+Mumbai,519,Maharashtra,Marathi,1108464,Hindi,708874.0,,
+Raigarh,520,Maharashtra,Marathi,2082124,Urdu,98176.0,Hindi,158547.0
+Pune,521,Maharashtra,Marathi,7362007,Hindi,942234.0,Others,425.0
+Ahmadnagar,522,Maharashtra,Marathi,4037236,Hindi,199319.0,Urdu,19487.0
+Bid,523,Maharashtra,Marathi,2155012,Urdu,214985.0,Hindi,11474.0
+Latur,524,Maharashtra,Marathi,2006294,Hindi,162702.0,Urdu,54296.0
+Osmanabad,525,Maharashtra,Marathi,1415748,Hindi,76552.0,Urdu,33669.0
+Solapur,526,Maharashtra,Marathi,3156672,Hindi,102209.0,Kannada,275182.0
+Satara,527,Maharashtra,Marathi,2792065,Hindi,104117.0,Urdu,6074.0
+Ratnagiri,528,Maharashtra,Marathi,1423350,Urdu,118930.0,,
+Sindhudurg,529,Maharashtra,Marathi,774724,Urdu,9612.0,Hindi,6531.0
+Kolhapur,530,Maharashtra,Marathi,3454381,Hindi,122233.0,Urdu,38984.0
+Sangli,531,Maharashtra,Marathi,2424294,Hindi,120993.0,Kannada,109667.0
+Adilabad,532,Andhra Pradesh,Telugu,1607656,Marathi,247067.0,Gondi,152945.0
+Nizamabad,533,Andhra Pradesh,Telugu,1839487,Urdu,325729.0,Lamani/Lambadi,107753.0
+Karimnagar,534,Andhra Pradesh,Telugu,3461188,Urdu,214641.0,Lamani/Lambadi,26989.0
+Medak,535,Andhra Pradesh,Telugu,2416357,Urdu,273187.0,Lamani/Lambadi,77373.0
+Hyderabad,536,Andhra Pradesh,Telugu,1709469,Urdu,1669246.0,Hindi,48580.0
+Rangareddy,537,Andhra Pradesh,Telugu,4148096,Urdu,535033.0,Lamani/Lambadi,86759.0
+Mahbubnagar,538,Andhra Pradesh,Telugu,3346714,Urdu,247940.0,Lamani/Lambadi,229363.0
+Nalgonda,539,Andhra Pradesh,Telugu,2936666,Lamani/Lambadi,333347.0,Urdu,90883.0
+Warangal,540,Andhra Pradesh,Telugu,2903085,Lamani/Lambadi,308825.0,Urdu,124753.0
+Khammam,541,Andhra Pradesh,Telugu,2135837,Lamani/Lambadi,231820.0,Koya,194107.0
+Srikakulam,542,Andhra Pradesh,Telugu,2495524,Odia,130805.0,Savara,36376.0
+Vizianagaram,543,Andhra Pradesh,Telugu,2258463,Urdu,7065.0,Hindi,787.0
+Visakhapatnam,544,Andhra Pradesh,Telugu,3930326,Urdu,52440.0,Hindi,2411.0
+East Godavari,545,Andhra Pradesh,Telugu,5067586,Urdu,57568.0,Odia,3351.0
+West Godavari,546,Andhra Pradesh,Telugu,3817336,Urdu,58807.0,Koya,33825.0
+Krishna,547,Andhra Pradesh,Telugu,4160270,Urdu,269026.0,Lamani/Lambadi,10672.0
+Guntur,548,Andhra Pradesh,Telugu,4285629,Urdu,499627.0,Sugali,18771.0
+Prakasam,549,Andhra Pradesh,Telugu,3173039,Urdu,180810.0,Sugali,5960.0
+Sri Potti Sriramulu Nellore,550,Andhra Pradesh,Telugu,2631239,Urdu,249333.0,Tamil,18100.0
+Y.S.R.,551,Andhra Pradesh,Telugu,2426525,Urdu,426945.0,,
+Kurnool,552,Andhra Pradesh,Telugu,3247814,Urdu,606138.0,Kannada,54535.0
+Anantapur,553,Andhra Pradesh,Telugu,3339667,Urdu,395054.0,Kannada,160530.0
+Chittoor,554,Andhra Pradesh,Telugu,3305489,Urdu,308542.0,Tamil,384309.0
+Belgaum,555,Karnataka,Kannada,3268714,Marathi,870127.0,Urdu,184821.0
+Bagalkot,556,Karnataka,Kannada,1626325,Urdu,175680.0,,
+Bijapur,557,Karnataka,Kannada,1631061,Urdu,338974.0,,
+Bidar,558,Karnataka,Kannada,902111,Marathi,275676.0,Urdu,203461.0
+Raichur,559,Karnataka,Kannada,1443924,Urdu,139740.0,Telugu,89299.0
+Koppal,560,Karnataka,Kannada,1168580,Urdu,102024.0,,
+Gadag,561,Karnataka,Kannada,908273,Urdu,80535.0,Lamani/Lambadi,8763.0
+Dharwad,562,Karnataka,Kannada,1294240,Urdu,339802.0,,
+Uttara Kannada,563,Karnataka,Kannada,788817,Konkani,212096.0,Urdu,102985.0
+Haveri,564,Karnataka,Kannada,1234307,Urdu,282847.0,,
+Bellary,565,Karnataka,Kannada,1762103,Urdu,138280.0,Lamani/Lambadi,37406.0
+Chitradurga,566,Karnataka,Kannada,1382085,Urdu,93823.0,Telugu,35372.0
+Davanagere,567,Karnataka,Kannada,1513297,Urdu,246865.0,Telugu,8069.0
+Shimoga,568,Karnataka,Kannada,1229553,Urdu,222699.0,,
+Udupi,569,Karnataka,Kannada,477771,Tulu,366769.0,Konkani,61871.0
+Chikmagalur,570,Karnataka,Kannada,827693,Urdu,67907.0,Tulu,40286.0
+Tumkur,571,Karnataka,Kannada,2275796,Urdu,232038.0,Telugu,52027.0
+Bangalore,572,Karnataka,Kannada,4277100,Telugu,186459.0,Tamil,1384651.0
+Mandya,573,Karnataka,Kannada,1659740,Urdu,76497.0,,
+Hassan,574,Karnataka,Kannada,1545832,Urdu,101870.0,Tulu,14663.0
+Dakshina Kannada,575,Karnataka,Tulu,1014638,Malayalam,99330.0,Kannada,47683.0
+Kodagu,576,Karnataka,Malayalam,115495,Kodava,75301.0,Kannada,113690.0
+Mysore,577,Karnataka,Kannada,2425061,Urdu,278292.0,,
+Chamarajanagar,578,Karnataka,Kannada,878958,Urdu,27919.0,Tamil,40029.0
+Gulbarga,579,Karnataka,Kannada,1686019,Urdu,405892.0,Telugu,46696.0
+Yadgir,580,Karnataka,Kannada,869432,Urdu,92855.0,Telugu,48756.0
+Kolar,581,Karnataka,Kannada,791446,Telugu,193343.0,Tamil,129360.0
+Chikkaballapura,582,Karnataka,Kannada,745099,Telugu,310462.0,Urdu,31243.0
+Bangalore Rural,583,Karnataka,Kannada,710170,Telugu,122659.0,Urdu,16949.0
+Ramanagara,584,Karnataka,Kannada,903741,Urdu,113804.0,,
+North Goa,585,Goa,Konkani,538508,Marathi,105710.0,Hindi,18848.0
+South Goa,586,Goa,Konkani,425472,Marathi,15424.0,Hindi,56760.0
+Lakshadweep,587,Lakshadweep,Malayalam,54264,Tamil,253.0,Bengali,101.0
+Kasaragod,588,Kerala,Malayalam,1081126,Tulu,110621.0,Kannada,9411.0
+Kannur,589,Kerala,Malayalam,2494784,Tamil,6260.0,Hindi,2747.0
+Wayanad,590,Kerala,Malayalam,767404,Pania,9599.0,Tamil,4144.0
+Kozhikode,591,Kerala,Malayalam,3056849,Tamil,10506.0,,
+Malappuram,592,Kerala,Malayalam,4090434,Tamil,10565.0,,
+Palakkad,593,Kerala,Malayalam,2633048,Tamil,135498.0,,
+Thrissur,594,Kerala,Malayalam,3086914,Tamil,14987.0,Konkani,1195.0
+Ernakulam,595,Kerala,Malayalam,3174165,Tamil,23766.0,Konkani,19628.0
+Idukki,596,Kerala,Malayalam,907589,Tamil,193841.0,,
+Kottayam,597,Kerala,Malayalam,1952383,Tamil,12537.0,,
+Alappuzha,598,Kerala,Malayalam,2106460,Konkani,10448.0,Tamil,2032.0
+Pathanamthitta,599,Kerala,Malayalam,1186984,Tamil,6910.0,,
+Kollam,600,Kerala,Malayalam,2611645,Tamil,16302.0,Bengali,330.0
+Thiruvananthapuram,601,Kerala,Malayalam,3243539,Tamil,38813.0,,
+Thiruvallur,602,Tamil Nadu,Tamil,3112066,Telugu,415085.0,,
+Chennai,603,Tamil Nadu,Tamil,3640352,Telugu,432276.0,,
+Kancheepuram,604,Tamil Nadu,Tamil,3600843,Telugu,201857.0,,
+Vellore,605,Tamil Nadu,Tamil,3162415,Urdu,288510.0,Telugu,167864.0
+Tiruvannamalai,606,Tamil Nadu,Tamil,2324250,Urdu,45331.0,Telugu,24172.0
+Viluppuram,607,Tamil Nadu,Tamil,3342750,Urdu,50868.0,Telugu,19775.0
+Salem,608,Tamil Nadu,Tamil,3080945,Telugu,211715.0,Malayalam,252.0
+Namakkal,609,Tamil Nadu,Tamil,1503474,Telugu,154928.0,,
+Erode,610,Tamil Nadu,Tamil,1840922,Telugu,165204.0,Kannada,79051.0
+The Nilgiris,611,Tamil Nadu,Tamil,357003,Badaga,120968.0,Malayalam,95666.0
+Dindigul,612,Tamil Nadu,Tamil,1976617,Telugu,112242.0,Kannada,13228.0
+Karur,613,Tamil Nadu,Tamil,978764,Telugu,68238.0,,
+Tiruchirappalli,614,Tamil Nadu,Tamil,2604457,Telugu,32456.0,Urdu,25150.0
+Perambalur,615,Tamil Nadu,Tamil,553476,Telugu,6723.0,,
+Ariyalur,616,Tamil Nadu,Tamil,749409,Telugu,3192.0,,
+Cuddalore,617,Tamil Nadu,Tamil,2543174,Telugu,18127.0,Urdu,12045.0
+Nagapattinam,618,Tamil Nadu,Tamil,1607117,Telugu,4015.0,Urdu,242.0
+Thiruvarur,619,Tamil Nadu,Tamil,1256720,Telugu,2606.0,Saurashtra/Saurashtri,481.0
+Thanjavur,620,Tamil Nadu,Tamil,2343717,Telugu,8793.0,Saurashtra/Saurashtri,19279.0
+Pudukkottai,621,Tamil Nadu,Tamil,1605887,Telugu,6598.0,,
+Sivaganga,622,Tamil Nadu,Tamil,1327614,Telugu,3644.0,Saurashtra/Saurashtri,1072.0
+Madurai,623,Tamil Nadu,Tamil,2812269,Telugu,31010.0,Saurashtra/Saurashtri,97072.0
+Theni,624,Tamil Nadu,Tamil,984721,Telugu,120065.0,Kannada,44569.0
+Virudhunagar,625,Tamil Nadu,Tamil,1738537,Telugu,172343.0,,
+Ramanathapuram,626,Tamil Nadu,Tamil,1321957,Telugu,4360.0,Saurashtra/Saurashtri,20522.0
+Thoothukkudi,627,Tamil Nadu,Tamil,1697740,Telugu,44503.0,,
+Tirunelveli,628,Tamil Nadu,Tamil,3032396,Telugu,21853.0,Saurashtra/Saurashtri,3654.0
+Kanniyakumari,629,Tamil Nadu,Tamil,1757093,Malayalam,107100.0,,
+Dharmapuri,630,Tamil Nadu,Tamil,1324562,Telugu,98067.0,,
+Krishnagiri,631,Tamil Nadu,Tamil,1094683,Telugu,311824.0,Kannada,105758.0
+Coimbatore,632,Tamil Nadu,Tamil,2390095,Telugu,515600.0,Kannada,55883.0
+Tiruppur,633,Tamil Nadu,Tamil,2077822,Telugu,273779.0,,
+Yanam,634,Puducherry,Telugu,54256,Urdu,1077.0,,
+Puducherry,635,Puducherry,Tamil,903931,Telugu,18757.0,,
+Mahe,636,Puducherry,Malayalam,41310,English,146.0,,
+Karaikal,637,Puducherry,Tamil,196800,Telugu,1307.0,,
+Nicobars,638,Andaman & Nicobar Islands,Nicobarese,23306,Tamil,1897,Hindi,1640
+North  & Middle Andaman,639,Andaman & Nicobar Islands,Bengali,56802,Sadan/Sadri,11683,,
+South Andaman,640,Andaman & Nicobar Islands,Telugu,35033,Bengali,22129,Tamil,40323
