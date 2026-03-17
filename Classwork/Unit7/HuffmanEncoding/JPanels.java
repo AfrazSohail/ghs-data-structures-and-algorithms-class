@@ -7,6 +7,8 @@ import java.nio.file.Files;
 import javax.swing.*;
 
 public class JPanels {
+
+    private static final int PIXEL_SIZE = 10;
     // static
 
     public static String openFile() {
@@ -42,24 +44,25 @@ public class JPanels {
         JFrame frame = new JFrame("Huffman Tree");
         int height = root.getHeight();
         int width = (int) Math.pow(2, height - 1);
-        frame.setSize(width * 100, height * 100);
+        frame.setSize(400, 300);
         frame.setVisible(true);
+
+        System.out.println("width : " + width + " height : " + height);
 
         frame.add(new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                drawNode(g, root, getWidth() / 2, 50, 1);
+                drawNode(g, root);
             }
         });
     }
 
-    private static void drawNode(Graphics g, CharNode node, int x, int y, int level) {
-        if (node == null) {
-            return;
-        }
-        g.drawString(node.character + ":" + node.frequency, x, y);
-        drawNode(g, node.left, x - 50 / level, y + 50, level + 1);
-        drawNode(g, node.right, x + 50 / level, y + 50, level + 1);
+    private static void drawNode(Graphics g, CharNode node ) {
+
+    }
+
+    private static void drawLine(Graphics g, int x1, int y1, int x2, int y2) {
+        g.drawLine(x1, y1, x2, y2);
     }
 }

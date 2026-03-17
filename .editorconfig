@@ -14,12 +14,16 @@ max_line_length = 120
 indent_style = space
 indent_size = 4
 tab_width = 4
-# Ensure spaces around operators and after commas
-space_around_operators = true
-space_after_comma = true
-# Note: .editorconfig does not support brace_style directly.
-# To enforce same-line braces for if statements (e.g., if (condition) { on one line),
-# use a formatter like Prettier or configure in VS Code/Java extension settings.
+max_line_length = 100
+
+# Java package-info and module-info files
+[package-info.java]
+indent_style = space
+indent_size = 4
+
+[module-info.java]
+indent_style = space
+indent_size = 4
 
 # Markdown files
 [*.md]
