@@ -12,20 +12,20 @@ import javax.swing.*;
 public class JPanels {
 
     private static final int NODE_RADIUS = 28;
-    private static final int LEVEL_GAP = 90;
+    private static final int LEVEL_GAP = 40;
     private static final int HORIZONTAL_PAD = 40;
     private static final int TOP_PAD = 50;
 
     // ─── File chooser ───────────────────────────────────────────────
 
-    public static String[] openFile() {
+    public static String openFile() {
         String currentFolder = java.nio.file.Paths.get("").toAbsolutePath().toString();
         JFileChooser chooser = new JFileChooser(currentFolder);
         int result = chooser.showOpenDialog(null);
         if (result == JFileChooser.APPROVE_OPTION) {
             File file = chooser.getSelectedFile();
             try {
-                return new String[] {file.getName(),Files.readString(file.toPath())};
+                return Files.readString(file.toPath());
             } catch (IOException ignored) {
             }
         }
@@ -226,7 +226,7 @@ public class JPanels {
 
     // MY OWN METHODS
     public static void saveFile(String fileName, String encodedText) throws IOException {
-        FileWriter writer = new FileWriter(fileName + "Output.txt");
+        FileWriter writer = new FileWriter(fileName + ".txt");
         writer.write(encodedText);
         writer.close();
     }

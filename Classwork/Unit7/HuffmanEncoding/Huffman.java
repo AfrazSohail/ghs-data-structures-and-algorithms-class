@@ -82,6 +82,41 @@ public class Huffman {
         encodedText = encoded.toString();
     }
 
+    public String decodeText(String encodedText) {
+        StringBuilder encoded = new StringBuilder(encodedText);
+        StringBuilder decoded = new StringBuilder();
+
+        StringBuilder code = new StringBuilder();
+        int length = -1;
+
+        while (!encoded.isEmpty()) {
+            length++;
+            code.append(encoded.charAt(length));
+            if (encodings.containsKey(code.toString())) {
+                char character = encodings.get(code.toString());
+                decoded.append(character);
+                encoded.delete(0, length+1);
+                code = new StringBuilder();
+                length = -1;
+            }
+        }
+        return decoded.toString();
+    }
+
+    // private char getChar(String code) {
+    //     char character = '\uFFFF';
+    //     for (char c : code.toCharArray()){
+    //         switch (c) {
+    //             case '0':
+
+    //                 break;
+
+    //             default:
+    //                 break;
+    //         }
+    //     }
+    // }
+
     @Override
     public String toString() {
         return root.toString();
