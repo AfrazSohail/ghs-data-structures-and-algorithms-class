@@ -2,6 +2,7 @@ package Classwork.Unit7.HuffmanEncoding;
 
 import java.awt.*;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.HashMap;
@@ -17,14 +18,14 @@ public class JPanels {
 
     // ─── File chooser ───────────────────────────────────────────────
 
-    public static String openFile() {
+    public static String[] openFile() {
         String currentFolder = java.nio.file.Paths.get("").toAbsolutePath().toString();
         JFileChooser chooser = new JFileChooser(currentFolder);
         int result = chooser.showOpenDialog(null);
         if (result == JFileChooser.APPROVE_OPTION) {
             File file = chooser.getSelectedFile();
             try {
-                return Files.readString(file.toPath());
+                return new String[] {file.getName(),Files.readString(file.toPath())};
             } catch (IOException ignored) {
             }
         }
@@ -221,5 +222,12 @@ public class JPanels {
             case '\t' -> "TAB";
             default -> String.valueOf(c);
         };
+    }
+
+    // MY OWN METHODS
+    public static void saveFile(String fileName, String encodedText) throws IOException {
+        FileWriter writer = new FileWriter(fileName + "Output.txt");
+        writer.write(encodedText);
+        writer.close();
     }
 }

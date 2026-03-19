@@ -1,19 +1,19 @@
 package Classwork.Unit7.HuffmanEncoding;
 
+import java.io.IOException;
+
 public class HuffmanDriver {
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         //COMPARE TO CAN NEVER SAY THAT TWO NODES ARE EQUAL!
-        char[] chars = new HuffmanDriver().getCharArray();
-        Huffman huffman = new Huffman(chars);
+        String[] input = JPanels.openFile();
+        String text = input[1];
+        String fileName = input[0];
+        Huffman huffman = new Huffman(text);
         System.out.println("Huffman Tree:\n" + huffman);
 
-        JPanels.CreateTextPanel(new String(chars), huffman.getEncodedText());
+        JPanels.CreateTextPanel(text, huffman.getEncodedText());
         JPanels.CreateTreePanel(huffman.getRoot());
-    }
-
-    private char[] getCharArray() {
-        String text = JPanels.openFile();
-        return text.toCharArray();
+        JPanels.saveFile(fileName, huffman.getEncodedText());
     }
 }
