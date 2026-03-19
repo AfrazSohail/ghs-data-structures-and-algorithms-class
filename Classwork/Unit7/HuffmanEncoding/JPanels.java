@@ -9,15 +9,48 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.*;
 
+/**
+ * Utility class that provides all GUI panels and file I/O operations for the
+ * Huffman Encoding application.
+ * <p>
+ * All methods are static; this class is not intended to be instantiated.
+ * It exposes three kinds of functionality:
+ * <ul>
+ *   <li><strong>File I/O</strong> – {@link #openFile()} and
+ *       {@link #saveFile(String, String)}</li>
+ *   <li><strong>Text panel</strong> – {@link #CreateTextPanel(String, String)}
+ *       shows the original and encoded text side by side.</li>
+ *   <li><strong>Tree panel</strong> – {@link #CreateTreePanel(CharNode)}
+ *       renders the Huffman binary tree using Java2D.</li>
+ * </ul>
+ * </p>
+ *
+ * @author AfrazSohail
+ * @apiNote Documentation generated with the assistance of GitHub Copilot (AI).
+ */
 public class JPanels {
 
+    /** Radius (in pixels) of each node circle drawn on the tree panel. */
     private static final int NODE_RADIUS = 28;
+
+    /** Vertical distance (in pixels) between successive tree levels. */
     private static final int LEVEL_GAP = 40;
+
+    /** Horizontal padding (in pixels) between adjacent node circles. */
     private static final int HORIZONTAL_PAD = 40;
+
+    /** Top padding (in pixels) before the first tree level. */
     private static final int TOP_PAD = 50;
 
     // ─── File chooser ───────────────────────────────────────────────
 
+    /**
+     * Opens a {@link JFileChooser} dialog rooted at the current working
+     * directory and returns the full text content of the chosen file.
+     *
+     * @return the file contents as a {@code String}, or {@code null} if the
+     *         user cancelled or an I/O error occurred
+     */
     public static String openFile() {
         String currentFolder = java.nio.file.Paths.get("").toAbsolutePath().toString();
         JFileChooser chooser = new JFileChooser(currentFolder);
@@ -34,6 +67,14 @@ public class JPanels {
 
     // ─── Text panel (original + encoded) ────────────────────────────
 
+    /**
+     * Creates and displays a {@link JFrame} containing two side-by-side
+     * scrollable text areas: one showing the original plain text and one
+     * showing the Huffman-encoded (or decoded) text.
+     *
+     * @param text        the left-pane text (original or encoded input)
+     * @param encodedText the right-pane text (encoded or decoded result)
+     */
     public static void CreateTextPanel(String text, String encodedText) {
         JFrame frame = new JFrame("Huffman – Text");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -53,6 +94,14 @@ public class JPanels {
         frame.setVisible(true);
     }
 
+    /**
+     * Builds a non-editable, word-wrapping {@link JTextArea} prefixed with a
+     * header line.
+     *
+     * @param header a label shown at the top of the text area
+     * @param body   the main content to display
+     * @return the configured {@code JTextArea}
+     */
     private static JTextArea buildTextArea(String header, String body) {
         JTextArea ta = new JTextArea(header + "\n\n" + body);
         ta.setEditable(false);
@@ -62,6 +111,13 @@ public class JPanels {
         return ta;
     }
 
+    /**
+     * Wraps a component in a {@link JScrollPane} decorated with a titled border.
+     *
+     * @param title the border title
+     * @param comp  the component to wrap
+     * @return the scroll pane with the titled border applied
+     */
     private static JScrollPane wrapInTitledScroll(String title, JComponent comp) {
         JScrollPane sp = new JScrollPane(comp);
         sp.setBorder(BorderFactory.createTitledBorder(title));
@@ -70,6 +126,18 @@ public class JPanels {
 
     // ─── Tree panel ─────────────────────────────────────────────────
 
+    /**
+     * Creates and displays a scrollable {@link JFrame} that renders the
+     * Huffman binary tree rooted at {@code root} using Java2D.
+     * <p>
+     * Node positions are assigned via an in-order traversal so that no two
+     * nodes overlap horizontally. Leaf nodes are drawn with a blue tint;
+     * internal nodes are drawn in light grey. Edge labels ({@code 0}/{@code 1})
+     * indicate the bit added when traversing that branch.
+     * </p>
+     *
+     * @param root the root {@link CharNode} of the Huffman tree to visualise
+     */
     public static void CreateTreePanel(CharNode root) {
         // Pre-calculate every node's (x, y) with an in-order walk
         // so that no two nodes overlap horizontally.
@@ -111,7 +179,12 @@ public class JPanels {
 
     /**
      * In-order traversal assigns an increasing x-index to each node
-     * and stores [xIndex, depth] in the map.
+     * and stores {@code [xIndex, depth]} in the map.
+     *
+     * @param node      the current node being visited (may be {@code null})
+     * @param positions map from node to its {@code [xIndex, depth]} array
+     * @param xCounter  single-element array used as a mutable x-index counter
+     * @param depth     the current depth in the tree (root = 0)
      */
     private static void assignPositions(CharNode node,
             Map<CharNode, int[]> positions, int[] xCounter, int depth) {
@@ -121,17 +194,38 @@ public class JPanels {
         assignPositions(node.right, positions, xCounter, depth + 1);
     }
 
-    /** Convert stored index/depth to pixel coordinates. */
+    /**
+     * Converts a node's stored {@code [xIndex, depth]} array to a pixel
+     * x-coordinate on the panel.
+     *
+     * @param pos the {@code [xIndex, depth]} array from the position map
+     * @return the pixel x-coordinate of the node's centre
+     */
     private static int pixelX(int[] pos) {
         return HORIZONTAL_PAD + pos[0] * (NODE_RADIUS * 2 + HORIZONTAL_PAD) + NODE_RADIUS;
     }
 
+    /**
+     * Converts a node's stored {@code [xIndex, depth]} array to a pixel
+     * y-coordinate on the panel.
+     *
+     * @param pos the {@code [xIndex, depth]} array from the position map
+     * @return the pixel y-coordinate of the node's centre
+     */
     private static int pixelY(int[] pos) {
         return TOP_PAD + pos[1] * LEVEL_GAP;
     }
 
     // ─── Drawing helpers ────────────────────────────────────────────
 
+    /**
+     * Recursively draws the subtree rooted at {@code node} onto {@code g2}.
+     * Edges are drawn before circles so that circle borders paint over line ends.
+     *
+     * @param g2        the {@link Graphics2D} context to draw on
+     * @param node      the current node to draw (may be {@code null})
+     * @param positions pre-computed {@code [xIndex, depth]} positions for every node
+     */
     private static void drawTree(Graphics2D g2, CharNode node,
             Map<CharNode, int[]> positions) {
         if (node == null) return;
@@ -178,7 +272,17 @@ public class JPanels {
         drawTree(g2, node.right, positions);
     }
 
-    /** Draw edge from parent centre to child circle, with a 0/1 label. */
+    /**
+     * Draws a labelled edge from a parent node centre to a child node circle.
+     * The line is shortened at both ends so it does not overlap the node circles.
+     *
+     * @param g2       the {@link Graphics2D} context
+     * @param px       pixel x-coordinate of the parent node centre
+     * @param py       pixel y-coordinate of the parent node centre
+     * @param childPos the {@code [xIndex, depth]} array of the child node
+     * @param bit      the edge label to display ({@code "0"} for left,
+     *                 {@code "1"} for right)
+     */
     private static void drawEdge(Graphics2D g2, int px, int py,
             int[] childPos, String bit) {
         int cx = pixelX(childPos);
@@ -203,7 +307,15 @@ public class JPanels {
         g2.drawString(bit, mx, my);
     }
 
-    /** Draw a string centred at (cx, cy) with the given font. */
+    /**
+     * Draws a string horizontally centred at the given pixel coordinate.
+     *
+     * @param g2   the {@link Graphics2D} context
+     * @param text the string to draw
+     * @param cx   the desired centre x-coordinate
+     * @param cy   the desired centre y-coordinate
+     * @param font the font to use for rendering
+     */
     private static void drawCentred(Graphics2D g2, String text,
             int cx, int cy, Font font) {
         g2.setFont(font);
@@ -213,7 +325,15 @@ public class JPanels {
         g2.drawString(text, cx - tw / 2, cy + th / 2 - 1);
     }
 
-    /** Readable display for a character (handles space, newline, etc.) */
+    /**
+     * Returns a human-readable display label for a character, replacing
+     * whitespace control characters with descriptive abbreviations.
+     *
+     * @param c the character to convert
+     * @return {@code "SP"} for space, {@code "LF"} for newline,
+     *         {@code "CR"} for carriage-return, {@code "TAB"} for tab,
+     *         or the character itself as a one-character string
+     */
     private static String displayChar(char c) {
         return switch (c) {
             case ' ' -> "SP";
@@ -225,6 +345,14 @@ public class JPanels {
     }
 
     // MY OWN METHODS
+    /**
+     * Saves {@code encodedText} to a file named {@code <fileName>.txt} in the
+     * current working directory, overwriting any existing file with that name.
+     *
+     * @param fileName    the base file name (without extension) to write to
+     * @param encodedText the content to write
+     * @throws IOException if the file cannot be created or written
+     */
     public static void saveFile(String fileName, String encodedText) throws IOException {
         FileWriter writer = new FileWriter(fileName + ".txt");
         writer.write(encodedText);
