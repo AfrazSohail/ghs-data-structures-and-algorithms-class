@@ -1,6 +1,7 @@
 package Classwork.Unit7;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Triage {
     ArrayList<Injury> injuries;
@@ -14,6 +15,38 @@ public class Triage {
 
     public Injury nextPatient() {// get or findMin
         return injuries.size() == 0 ? null : injuries.get(0);
+    }
+
+    public void heapSort() {
+        int heapSize = injuries.size();
+        while (heapSize > 0) {
+            swap(0, --heapSize);
+            downHeap(0, heapSize);
+        }
+        Collections.reverse(injuries);
+    }
+
+    public void downHeap(int i, int size) {
+        //addition for heapsize
+        if (getLeft(i) >= size)
+            return;
+        if (getLeft(i) == -1)
+            return;
+        if (getRight(i) == -1 ||getRight(i) >= size) {
+            if (injuries.get(i).compareTo(injuries.get(getLeft(i))) > 0) {
+                swap(i, getLeft(i));
+                return;
+            }
+        }
+
+        // two children case
+        int left = getLeft(i);
+        int right = getRight(i);
+        int bigger = (injuries.get(left).compareTo(injuries.get(right)) > 0) ? right : left;
+        if (injuries.get(i).compareTo(injuries.get(bigger)) > 0) {
+            swap(i, bigger);
+            downHeap(bigger, size); // Update for heapsize
+        }
     }
 
     public boolean setPriority(int i, int priority) {
