@@ -21,6 +21,6 @@ public class DramaDriver {
         shore.connect(Katie, MrM, false);
         System.out.println(shore);
         //Break up Regina and Katie
-        shore.ghost(Regina, Katie, true);
+        shore.ghost(Regina, Katie, false);
     }
 }
