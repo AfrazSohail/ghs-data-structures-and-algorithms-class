@@ -17,4 +17,12 @@ public class Bridge extends Navigable {
     public int getWeight() {
         return weight;
     }
+
+    @Override
+    public char getChar() {
+        if (dir == '|') {
+            return weight == 1 ? '|' : '║';
+        }
+        return weight == 1 ? '-' : '═';
+    }
 }

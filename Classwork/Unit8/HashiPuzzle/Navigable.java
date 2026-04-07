@@ -20,6 +20,14 @@ public class Navigable {
         return y;
     }
 
+    public boolean isIsland() {
+        return this instanceof Island;
+    }
+
+    public char getChar() {
+        return ' ';
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == null || obj.getClass() != this.getClass())

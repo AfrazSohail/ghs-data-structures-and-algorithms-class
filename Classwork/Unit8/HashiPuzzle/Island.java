@@ -8,7 +8,9 @@ public class Island extends Navigable {
         this.ch = ch;
     }
 
+    @Override
     public char getChar() {
+        // return (char) (ch - '1' + '❶');
         return ch;
     }
 }
