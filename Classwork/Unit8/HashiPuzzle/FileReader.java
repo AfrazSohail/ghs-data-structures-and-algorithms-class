@@ -14,7 +14,7 @@ public class FileReader {
         if (result == JFileChooser.APPROVE_OPTION) {
             File file = chooser.getSelectedFile();
             try {
-                return Files.readString(file.toPath());
+                return Files.readString(file.toPath()).strip();
             } catch (IOException ignored) {
             }
         }
