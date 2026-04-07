@@ -21,6 +21,20 @@ public class DramaDriver {
         shore.connect(Katie, MrM, false);
         System.out.println(shore);
         //Break up Regina and Katie
-        shore.ghost(Regina, Katie, false);
+        shore.ghost(Regina, Katie, true);
+        shore.ghost(Regina, Gretchen, true);
+        // System.out.println(shore.DFS(Regina, "Gretchen sucks"));
+        shore.ghost(Regina, Karen, true);
+        // System.out.println(shore.DFS(Regina, "Gretchen sucks"));
+        System.out.println("As of 04/02");
+        System.out.println(shore);
+        //Adding Elwoods
+        Meanie Elwoods = new Meanie("Elwoods", 5);
+        shore.addMeanie(Elwoods, null, false);
+        shore.connect(Elwoods, Katie, true);
+        shore.connect(Regina, Elwoods, true);
+        System.out.println(shore.DFSpread(Gretchen, "Happy Easter", Katie));
+        shore.connect(Karen, Elwoods, true);
+        shore.BFSpread(Karen, "BFF", null);
     }
 }

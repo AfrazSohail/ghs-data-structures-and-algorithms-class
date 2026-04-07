@@ -1,5 +1,8 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class NorthShore {
@@ -53,10 +56,10 @@ public class NorthShore {
         return ghosted || ghostBack;
     }
 
-    public HashSet<Meanie> DFS(Meanie m, String rumor) {
+    public ArrayList<Meanie> DFSpread(Meanie m, String rumor, Meanie target) {
         if (m==null||!plastics.containsKey(m))
             return null;
-        HashSet<Meanie> beenThere = new HashSet<Meanie>();
+        ArrayList<Meanie> beenThere = new ArrayList<Meanie>();
         Stack<Meanie> spreaders = new Stack<Meanie>();
         spreaders.push(m);
         while (!spreaders.isEmpty()) {
@@ -66,8 +69,39 @@ public class NorthShore {
                 continue;
             beenThere.add(spreader);
             for (Meanie meanie: plastics.get(spreader))
-                if (!beenThere.contains(meanie))
+                if (!beenThere.contains(meanie)){
                     spreaders.push(meanie);
+                    if (meanie == target) {
+                        meanie.rumor = rumor;
+                        return beenThere;
+                    }
+                }
+        }
+
+        return beenThere;
+    }
+
+    public ArrayList<Meanie> BFSpread(Meanie m, String rumor, Meanie target) {
+        if (m==null||!plastics.containsKey(m))
+            return null;
+        ArrayList<Meanie> beenThere = new ArrayList<Meanie>();
+        Queue<Meanie> spreaders = new LinkedList<Meanie>();
+        spreaders.offer(m);
+        while (!spreaders.isEmpty()) {
+            Meanie spreader = spreaders.poll();
+            spreader.rumor = rumor;
+            if (beenThere.contains(spreader))
+                continue;
+            beenThere.add(spreader);
+            System.out.println(spreader);
+            for (Meanie meanie: plastics.get(spreader))
+                if (!beenThere.contains(meanie)){
+                    spreaders.offer(meanie);
+                    if (meanie == target) {
+                        meanie.rumor = rumor;
+                        return beenThere;
+                    }
+                }
         }
 
         return beenThere;

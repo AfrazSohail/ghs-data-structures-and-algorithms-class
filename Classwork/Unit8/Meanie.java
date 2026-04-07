@@ -11,6 +11,6 @@ public class Meanie {
 
     @Override
     public String toString() {
-        return  name + " id." + id ;
+        return  name + " id." + id + " rumor: " + rumor ;
     }
 }
