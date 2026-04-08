@@ -32,7 +32,7 @@ public class Triage {
             return;
         if (getLeft(i) == -1)
             return;
-        if (getRight(i) == -1 ||getRight(i) >= size) {
+        if (getRight(i) == -1 || getRight(i) >= size) {
             if (injuries.get(i).compareTo(injuries.get(getLeft(i))) > 0) {
                 swap(i, getLeft(i));
                 return;
@@ -47,6 +47,13 @@ public class Triage {
             swap(i, bigger);
             downHeap(bigger, size); // Update for heapsize
         }
+    }
+
+    public int get(Injury inj) {
+        for (int i = 0; i < injuries.size(); i++)
+            if (injuries.get(i).equals(inj))
+                return i;
+            return -1;
     }
 
     public boolean setPriority(int i, int priority) {

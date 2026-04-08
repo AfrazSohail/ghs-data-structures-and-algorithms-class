@@ -54,8 +54,9 @@ public class Huffman {
      */
     public Huffman(String text) {
         this.text = text;
-        buildArray(text.trim());
+        buildArray(text.strip());
         buildTree();
+        if (!charTree.isEmpty())
         scanTree(charTree.get(0), "");
         encodeText();
     }
