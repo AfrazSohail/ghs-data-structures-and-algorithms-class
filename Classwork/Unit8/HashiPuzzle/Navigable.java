@@ -35,4 +35,9 @@ public class Navigable {
         Navigable other = (Navigable) obj;
         return this.curId == other.curId;
     }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(curId);
+    }
 }

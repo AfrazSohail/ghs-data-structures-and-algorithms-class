@@ -12,4 +12,9 @@ public class Island extends Navigable {
     public char getChar() {
         return ch;
     }
+
+    @Override
+    public String toString() {
+        return "Char: " + ch + " X:" + x + " Y:" + y;
+    }
 }

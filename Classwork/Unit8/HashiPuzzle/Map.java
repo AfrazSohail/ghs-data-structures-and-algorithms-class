@@ -6,6 +6,22 @@ public class Map {
     private final Navigable[][] map;
     private HashSet<Island> islandSet = new HashSet<Island>();
 
+    public int xMin() {
+        return 0;
+    }
+
+    public int yMin() {
+        return 0;
+    }
+
+    public int xMax(){
+        return map.length > 0 ? map[0].length - 1 : -1;
+    }
+
+    public int yMax() {
+        return map.length - 1;
+    }
+
     public Map(String str) {
         int[] size = getSize(str);
         map = new Navigable[size[0]][size[1]];
@@ -32,7 +48,11 @@ public class Map {
         }
     }
 
-    public Navigable getNavigable(char ch, int x, int y) {
+    public Navigable getNavigable(int x, int y) {
+        return map[y][x];
+    }
+
+    private Navigable getNavigable(char ch, int x, int y) {
         if (Character.isDigit(ch)) {
             Island island = new Island(ch, x, y);
             islandSet.add(island);

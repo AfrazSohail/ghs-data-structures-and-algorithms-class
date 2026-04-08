@@ -14,6 +14,20 @@ public class Bridge extends Navigable {
         return dir;
     }
 
+    public boolean matchDir(char dir) {
+        if (dir == this.dir)
+            return true;
+
+        switch (this.dir) {
+            case '|':
+                return (dir == 'N' || dir == 'S');
+            case '-':
+                return (dir == 'E' || dir == 'W');
+            default:
+                return false;
+        }
+    }
+
     public int getWeight() {
         return weight;
     }

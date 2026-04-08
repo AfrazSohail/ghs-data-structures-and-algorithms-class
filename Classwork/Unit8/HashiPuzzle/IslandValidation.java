@@ -4,6 +4,7 @@ public class IslandValidation {
     private final Island island;
     private int check;
     private boolean isSolved = false;
+    private char dir = ' ';
 
     public IslandValidation(Island island) {
         this.island = island;
@@ -25,5 +26,45 @@ public class IslandValidation {
 
     public Island getIsland() {
         return island;
+    }
+
+    public char getDir() {
+        return dir;
+    }
+
+    public char nextDir() {
+        switch (dir) {
+            case ' ':
+                dir = 'N';
+                break;
+            case 'N':
+                dir = 'E';
+                break;
+            case 'E':
+                dir = 'S';
+                break;
+            case 'S':
+                dir = 'W';
+                break;
+            case 'W':
+                dir = ' ';
+                break;
+            default:
+                break;
+        }
+        return dir;
+    }
+
+    @Override
+    public String toString() {
+        return "Island: " + island + "/" + ((isSolved) ? "TRUE" : check);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass())
+            return false;
+        IslandValidation other = (IslandValidation) obj;
+        return this.getIsland().equals(other.getIsland());
     }
 }

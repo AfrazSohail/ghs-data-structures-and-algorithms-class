@@ -6,5 +6,6 @@ public class Driver {
         System.out.println(text);
         Map map = new Map(text);
         System.out.println(map);
+        System.out.println(Hashier.isSolution(map));
     }
 }
