@@ -1,3 +1,4 @@
+package Unweighted;
 public class Meanie {
     String name;
     int id;

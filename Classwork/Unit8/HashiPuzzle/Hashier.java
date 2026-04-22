@@ -12,8 +12,8 @@ public class Hashier {
 
         while (!islandStack.isEmpty()) {
             i++;
-            if (islandSet.size() > 10 || i > 15)
-                System.exit(0);
+            // if (islandSet.size() > 10 || i > 15)
+            //     System.exit(0);
             IslandValidation island = islandStack.peek();
             if (island.isSolved()) {
                 islandSet.add(islandStack.pop().getIsland());
@@ -26,10 +26,10 @@ public class Hashier {
                 }
                 islandStack.add(newIsland);
             }
-            System.out.println("Stack: " + islandStack.toString());
-            System.out.println("Set: " + islandSet.toString());
+            // System.out.println("Stack: " + islandStack.toString());
+            // System.out.println("Set: " + islandSet.toString());
         }
-
+        // System.out.println("Islands: " + islandSet.toString()+ "\nMap Islands: " + map.islandSet().toString());
         return islandSet.equals(map.islandSet());
     }
 
