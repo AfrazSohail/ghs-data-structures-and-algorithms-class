@@ -104,7 +104,7 @@ public class SpaceAgency {
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder("");
-        output.append("Hub: " + hub.name + "\n");
+        output.append("Hub: ").append(hub.name).append("\n");
         for (Celest celest : celests) {
             output.append(celest.name).append("->");
             for (Celest celest2 : celest.neighbors.keySet()) {
