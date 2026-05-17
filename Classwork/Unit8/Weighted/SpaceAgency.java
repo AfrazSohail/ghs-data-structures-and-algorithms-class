@@ -5,34 +5,42 @@ import java.util.HashSet;
 import java.util.PriorityQueue;
 
 public class SpaceAgency {
-	HashSet<Celest> celests;
-	Celest hub;
-	public SpaceAgency(HashSet<Celest> celests, Celest hub) {
-		this.celests = celests;
-		this.hub = hub;
-	}
-	public void resetPrices() {
-		for(Celest c:celests)
-			if(c==hub)
-				c.price = 0;
-			else
-				c.price = Double.POSITIVE_INFINITY;
-	}
-	public String getCheapest() {
-		this.resetPrices();
 
-		dijkstras();
-		StringBuilder output = new StringBuilder();
-		for(Celest c:celests)
-			output.append(c.name + ": " + c.price+"\n");
-		return output.toString();
-	}
+    HashSet<Celest> celests;
+    Celest hub;
+
+    public SpaceAgency(HashSet<Celest> celests, Celest hub) {
+        this.celests = celests;
+        this.hub = hub;
+    }
+
+    public void resetPrices() {
+        for (Celest c : celests) {
+            if (c == hub) {
+                c.price = 0;
+            } else {
+                c.price = Double.POSITIVE_INFINITY;
+            }
+        }
+    }
+
+    public String getCheapest() {
+        this.resetPrices();
+
+        dijkstras();
+        StringBuilder output = new StringBuilder();
+        for (Celest c : celests) {
+            output.append(c.name).append(": ").append(c.price).append("\n");
+        }
+        return output.toString();
+    }
 
     public void dijkstras() {
-        PriorityQueue<Celest> PQ = new PriorityQueue<Celest>();
-        for (Celest c : celests)
+        PriorityQueue<Celest> PQ = new PriorityQueue<>();
+        for (Celest c : celests) {
             PQ.add(c);
-        HashSet<Celest> beenTo = new HashSet<Celest>();
+        }
+        HashSet<Celest> beenTo = new HashSet<>();
         while (!PQ.isEmpty()) {
             Celest exploring = PQ.poll();
             if (!beenTo.contains(exploring)) {
@@ -54,10 +62,10 @@ public class SpaceAgency {
     }
 
     public ArrayList<Edge> prims() {
-        ArrayList<Edge> mst = new ArrayList<Edge>();
+        ArrayList<Edge> mst = new ArrayList<>();
 
-        PriorityQueue<Edge> pq = new PriorityQueue<Edge>();
-        HashSet<Celest> beenTo = new HashSet<Celest>();
+        PriorityQueue<Edge> pq = new PriorityQueue<>();
+        HashSet<Celest> beenTo = new HashSet<>();
         beenTo.add(hub);
         addEdges(hub, pq, beenTo);
 
@@ -65,7 +73,7 @@ public class SpaceAgency {
             Edge cheapEdge = pq.poll();
             if (!beenTo.contains(cheapEdge.B)) {
                 mst.add(cheapEdge);
-                if (mst.size() == celests.size() - 1){
+                if (mst.size() == celests.size() - 1) {
                     return mst;
                 }
                 beenTo.add(cheapEdge.B);
@@ -83,23 +91,27 @@ public class SpaceAgency {
         }
     }
 
-	public String getRoute(Celest c) {
-		if(c==null)
-			return "Can't Get to ";
-		if(c==hub)
-			return hub.name;
-		return this.getRoute(c.previous)+c.name;
-	}
+    public String getRoute(Celest c) {
+        if (c == null) {
+            return "Can't Get to ";
+        }
+        if (c == hub) {
+            return hub.name;
+        }
+        return this.getRoute(c.previous) + c.name;
+    }
 
-	public String toString() {
-		StringBuilder output = new StringBuilder("");
-		output.append("Hub: " + hub.name+"\n");
-		for(Celest celest:celests) {
-			output.append(celest.name+"->");
-			for(Celest celest2:celest.neighbors.keySet())
-				output.append(celest2.name+":"+celest.neighbors.get(celest2)+", " );
-			output.append("\n");
-		}
-		return output.toString();
-	}
+    @Override
+    public String toString() {
+        StringBuilder output = new StringBuilder("");
+        output.append("Hub: " + hub.name + "\n");
+        for (Celest celest : celests) {
+            output.append(celest.name).append("->");
+            for (Celest celest2 : celest.neighbors.keySet()) {
+                output.append(celest2.name).append(":").append(celest.neighbors.get(celest2)).append(", ");
+            }
+            output.append("\n");
+        }
+        return output.toString();
+    }
 }
