@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TicketDriver",
+            "request": "launch",
+            "mainClass": "TicketDriver",
+            "projectName": "ghs-data-structures-and-algorithms-class_fc8877a4"
+        },
+        {
+            "type": "java",
             "name": "StarTrek",
             "request": "launch",
             "mainClass": "Weighted.StarTrek",
