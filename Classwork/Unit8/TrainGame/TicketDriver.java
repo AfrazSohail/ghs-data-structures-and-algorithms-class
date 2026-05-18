@@ -1,7 +1,9 @@
+
 import java.util.Scanner;
 
 public class TicketDriver {
-public static void main(String[] args) {
+
+    public static void main(String[] args) {
         TicketToRide.loadFiles();
         TicketToRide.displayData();
 
@@ -18,6 +20,7 @@ public static void main(String[] args) {
             }
             System.out.println("Shortest path from " + start + " to " + end + ":");
             TicketToRide.dijkstraSimple(start, end);
+            TicketToRide.dijkstraComplex(start, end);
         }
     }
 }

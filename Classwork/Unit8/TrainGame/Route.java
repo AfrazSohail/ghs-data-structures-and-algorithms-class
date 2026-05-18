@@ -1,6 +1,8 @@
+
 import java.util.ArrayList;
 
 public class Route {
+
     private ArrayList<City> cities = new ArrayList<>();
     private int distance;
 

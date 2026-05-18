@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -54,20 +55,19 @@ public class FileLoader {
         }
     }
 
-    public static void loadTracks(HashMap<Route.Color, Integer> tracks) {
+    public static void loadTracks(TrackBag tracks) {
         String filePath = loadFileGUI("Select Tracks File");
         if (filePath == null) {
             return;
         }
         File file = new File(filePath);
         try (Scanner sc = new Scanner(file)) {
-            sc.nextLine();
             while (sc.hasNextLine()) {
                 String line = sc.nextLine();
                 String data[] = line.split(",");
                 char color = data[0].trim().charAt(0);
                 int count = Integer.parseInt(data[1].trim());
-                tracks.put(Route.Color.valueOf(String.valueOf(color)), count);
+                tracks.addTracks(color, count);
             }
         } catch (FileNotFoundException e) {
             System.out.println("The TRACKS path set in FileLoad.java is incorrect!");
