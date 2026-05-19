@@ -7,6 +7,10 @@ public class DijkstraRoute {
 
     public static void find(TrackBag bag, HashSet<City> cities, HashMap<City, HashSet<Route>> graph, City start,
             City end) {
+        if (start.equals(end)) {
+            System.out.println("Start and end cities are the same: " + start);
+            return;
+        }
         HashMap<Route, Integer> distances = new HashMap<>();
         for (City city : cities) {
             HashSet<Route> routes = graph.get(city);
