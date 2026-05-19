@@ -1,0 +1,130 @@
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.PriorityQueue;
+
+public class DijkstraCity {
+
+    public static void find(TrackBag bag, HashMap<City, HashSet<Route>> graph, HashSet<City> cities, City start,
+            City end) {
+        HashMap<City, Integer> distances = new HashMap<>();
+        for (City city : cities) {
+            distances.put(city, Integer.MAX_VALUE);
+        }
+        distances.put(start, 0);
+
+        HashMap<City, City> previous = new HashMap<>();
+        previous.put(start, null);
+
+        HashSet<City> visited = new HashSet<>();
+        PriorityQueue<City> pq = new PriorityQueue<>((c1, c2) -> Integer.compare(distances.get(c1), distances.get(c2)));
+        pq.add(start);
+
+        while (!pq.isEmpty()) {
+            City current = pq.poll();
+            if (current.equals(end)) {
+                break;
+            }
+            if (visited.contains(current)) {
+                continue;
+            }
+            visited.add(current);
+
+            int currentDist = distances.get(current);
+            if (currentDist == Integer.MAX_VALUE) {
+                continue;
+            }
+
+            HashSet<Route> neighbors = graph.get(current);
+            if (neighbors == null) {
+                continue;
+            }
+
+            for (Route route : neighbors) {
+                if (!route.containsCity(current)) {
+                    continue;
+                }
+
+                City neighbor = route.getNeighbour(current);
+                int candidate = currentDist + route.getDistance();
+                if (candidate < distances.get(neighbor)) {
+                    distances.put(neighbor, candidate);
+                    previous.put(neighbor, current);
+                    pq.add(neighbor);
+                }
+            }
+        }
+
+        if (distances.get(end) == Integer.MAX_VALUE) {
+            System.out.println("ERROR: No path found to " + end + " from " + start + ".");
+            return;
+        }
+
+        String path = printPath(end, previous);
+        System.out.println(path);
+
+        String tracksNeeded = tracksNeeded(bag, end, previous, graph);
+        System.out.println("Tracks needed: " + tracksNeeded);
+    }
+
+    private static String printPath(City end, HashMap<City, City> previous) {
+        StringBuilder sb = new StringBuilder();
+        City current = end;
+        while (current != null) {
+            sb.insert(0, current + " -> ");
+            current = previous.get(current);
+        }
+        if (sb.length() > 4) {
+            sb.setLength(sb.length() - 4);
+        }
+        return sb.toString();
+    }
+
+    private static String tracksNeeded(TrackBag bag, City end, HashMap<City, City> previous,
+            HashMap<City, HashSet<Route>> graph) {
+        int totalTracks = bag.getTotalTracks();
+        City current = end;
+        TrackBag currentBag = new TrackBag(bag);
+        while (previous.get(current) != null) {
+            City prev = previous.get(current);
+            HashSet<Route> routes = graph.get(current);
+            for (Route route : routes) {
+                if (route.containsCity(prev)) {
+                    currentBag.addTracks(route.getColor(), -route.getDistance());
+                    break;
+                }
+            }
+            current = prev;
+        }
+
+        int tracksNeeded = currentBag.getTotalTracks();
+        for (Route.Color color : Route.Color.values()) {
+            if (color == Route.Color.X) {
+                int count = currentBag.getTrackCount(color);
+                if (tracksNeeded <= totalTracks) {
+                    currentBag.addTracks(color, -count);
+                } else {
+                    currentBag.addTracks(color, -2 * count);
+                }
+            }
+            int count = currentBag.getTrackCount(color);
+            if (count > 0) {
+                currentBag.addTracks(color, -count);
+            }
+            if (count < 0) {
+                currentBag.addTracks(color, -2 * count);
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (Route.Color color : Route.Color.values()) {
+            if (currentBag.getTrackCount(color) != 0) {
+                sb.append(color).append(": ").append(currentBag.getTrackCount(color)).append(", ");
+            }
+        }
+        if (sb.length() > 2) {
+            sb.setLength(sb.length() - 2);
+        }
+        return sb.toString();
+    }
+}

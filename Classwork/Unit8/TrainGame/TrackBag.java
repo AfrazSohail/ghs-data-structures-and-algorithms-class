@@ -4,13 +4,25 @@ import java.util.HashMap;
 public class TrackBag {
 
     private HashMap<Route.Color, Integer> tracks;
+    private int totalTracks;
+
+    public int getTotalTracks() {
+        return totalTracks;
+    }
 
     public TrackBag() {
         tracks = new HashMap<>();
+        totalTracks = 0;
+    }
+
+    public TrackBag(TrackBag bag) {
+        this.tracks = new HashMap<>(bag.tracks);
+        this.totalTracks = bag.totalTracks;
     }
 
     public void addTracks(Route.Color color, int amount) {
         tracks.put(color, tracks.getOrDefault(color, 0) + amount);
+        totalTracks += amount;
     }
 
     public void addTracks(char color, int amount) {
@@ -22,6 +34,7 @@ public class TrackBag {
             return false;
         }
         tracks.put(color, tracks.get(color) - amount);
+        totalTracks -= amount;
         return true;
     }
 
@@ -34,10 +47,6 @@ public class TrackBag {
     }
 
     public TrackBag copy() {
-        TrackBag copy = new TrackBag();
-        for (Route.Color color : tracks.keySet()) {
-            copy.addTracks(color, tracks.get(color));
-        }
-        return copy;
+        return new TrackBag(this);
     }
 }

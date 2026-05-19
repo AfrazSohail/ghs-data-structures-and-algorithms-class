@@ -18,9 +18,10 @@ public class TicketDriver {
                 System.out.println("One or both cities not found!");
                 return;
             }
-            System.out.println("Shortest path from " + start + " to " + end + ":");
-            TicketToRide.dijkstraSimple(start, end);
-            TicketToRide.dijkstraComplex(start, end);
+            System.out.println("Shortest route from " + start + " to " + end + " without constraints:");
+            TicketToRide.dijkstraCity(start, end);
+            System.out.println("\nShortest route from " + start + " to " + end + " with constraints:");
+            TicketToRide.dijkstraRoute(start, end);
         }
     }
 }

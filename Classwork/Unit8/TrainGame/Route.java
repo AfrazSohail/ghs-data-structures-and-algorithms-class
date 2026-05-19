@@ -34,8 +34,8 @@ public class Route {
         }
     }
 
-    public boolean containsCities(City city1, City city2) {
-        return cities.contains(city1) && cities.contains(city2);
+    public boolean containsCity(City city1) {
+        return cities.contains(city1);
     }
 
     public int getDistance() {
