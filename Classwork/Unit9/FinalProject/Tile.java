@@ -1,25 +1,24 @@
-package FinalProject;
-
-import javax.swing.text.Position;
 
 public class Tile {
 
     private Position pos;
     private TILE_TYPE tileType;
+    private Unit unit = null;
 
-    private static enum TILE_TYPE {
-        SIMPLE, SHORT, TALL
+    public static enum TILE_TYPE {
+        SIMPLE, COVER, OBSTACLE
     }
 
-    public Tile(int x, int y, String type) {
+    public Tile(int x, int y, TILE_TYPE tileType) {
         pos = new Position(x, y);
-        tileType = TILE_TYPE.valueOf(type.toUpperCase());
+        this.tileType = tileType;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[").append(pos.getX()).append(", ").append(pos.getY()).append(", ").append(tileType).append("]");
+        sb.append("[").append(pos.getX()).append(", ").append(pos.getY()).append(", ").append((tileType + "").charAt(0))
+                .append(", ").append(unit).append("]");
         return sb.toString();
     }
 }
