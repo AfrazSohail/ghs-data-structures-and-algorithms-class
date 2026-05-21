@@ -1,16 +1,10 @@
 {
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m -Xlog:disable",
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": true,
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit",
-        "source.fixAll": "explicit"
+        "source.organizeImports": "always",
+        "source.fixAll": "always"
     },
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
@@ -19,15 +13,15 @@
     ],
     "java.format.enabled": true,
     "java.format.settings.url": null,
-    "java.format.settings.profile": "GoogleStyle",
+    "java.format.settings.profile": "Default",
     "java.saveActions.organizeImports": true,
     "[java]": {
-        "editor.defaultFormatter": "Oracle.oracle-java",
+        "editor.defaultFormatter": "redhat.java",
         "editor.formatOnSave": true,
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true,
+        "editor.formatOnType": true,
         "editor.rulers": [
             100
         ]
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }

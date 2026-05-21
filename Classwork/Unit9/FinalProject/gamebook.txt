@@ -1,0 +1,23 @@
+4 Factions
+    USUK
+    Grmy
+    USSR
+    Japn
+
+Classes
+    Vehicle
+        Tank
+        ~Plane
+        ~Special --- Skin depends on map (Boat for shallow water, Jeep for jungle, Ship for ocean, etc.)
+    Infantry
+        Infantry
+        Recon
+        Engineer
+
+Board
+    6x6 grid
+    Tiles
+        Simple
+        ~Special --- Depends on map (Shallow water, Jungle, Ocean, etc.)
+        Obstacle-short (cover for infantry)
+        Obstacle-tall (blocks movement for all units)

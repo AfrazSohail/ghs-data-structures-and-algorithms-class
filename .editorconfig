@@ -1,22 +1,22 @@
-# Top-most EditorConfig file
 root = true
 
-# Global settings
+# Strict baseline style for all files
 [*]
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-max_line_length = 120
+indent_style = space
+indent_size = 4
+tab_width = 4
 
-# Java files
+# Java style (4 spaces, 100-column target)
 [*.java]
 indent_style = space
 indent_size = 4
 tab_width = 4
 max_line_length = 100
 
-# Java package-info and module-info files
 [package-info.java]
 indent_style = space
 indent_size = 4
@@ -25,32 +25,13 @@ indent_size = 4
 indent_style = space
 indent_size = 4
 
-# Markdown files
+# Markdown keeps meaningful trailing spaces
 [*.md]
 trim_trailing_whitespace = false
-insert_final_newline = true
 max_line_length = off
 
-# Python files
-[*.py]
-indent_style = space
-indent_size = 4
-tab_width = 4
-
-# JSON files
-[*.json]
-indent_style = space
-indent_size = 2
-tab_width = 2
-
-# YAML files
-[*.yml]
-indent_style = space
-indent_size = 2
-tab_width = 2
-
-# XML files
-[*.xml]
+# Config and data files use 2-space indentation
+[*.{json,yml,yaml,xml,html,css,scss}]
 indent_style = space
 indent_size = 2
 tab_width = 2
@@ -60,25 +41,7 @@ tab_width = 2
 end_of_line = lf
 insert_final_newline = true
 
-# Ignore minified files
+# Minified files are not reformatted
 [*.min.js]
 max_line_length = off
 trim_trailing_whitespace = false
-
-# C/C++ files
-[*.{c,cpp,h,hpp}]
-indent_style = space
-indent_size = 4
-tab_width = 4
-
-# HTML files
-[*.html]
-indent_style = space
-indent_size = 2
-tab_width = 2
-
-# CSS files
-[*.css]
-indent_style = space
-indent_size = 2
-tab_width = 2
