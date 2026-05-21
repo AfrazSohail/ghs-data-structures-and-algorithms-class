@@ -3,8 +3,23 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.PriorityQueue;
 
+/**
+ * Finds the shortest route sequence that can be paid for with the available tracks.
+ * Written by AI for Afraz Sohail.
+ *
+ * @author Afraz Sohail
+ */
 public class DijkstraRoute {
 
+    /**
+     * Runs a constrained Dijkstra search across route states and prints the result.
+     *
+     * @param bag the available track bag
+     * @param cities the set of all cities
+     * @param graph the adjacency map of routes by city
+     * @param start the starting city
+     * @param end the destination city
+     */
     public static void find(TrackBag bag, HashSet<City> cities, HashMap<City, HashSet<Route>> graph, City start,
             City end) {
         if (start.equals(end)) {
@@ -128,6 +143,13 @@ public class DijkstraRoute {
         }
     }
 
+    /**
+     * Reconstructs the route sequence from the previous-route map.
+     *
+     * @param route the final route in the discovered path
+     * @param previous the map of each route to its predecessor route
+     * @return the formatted route sequence
+     */
     private static String getPath(Route route, HashMap<Route, Route> previous) {
         StringBuilder sb = new StringBuilder();
         while (route != null) {
@@ -137,6 +159,13 @@ public class DijkstraRoute {
         return sb.substring(0, sb.length() - 7);
     }
 
+    /**
+     * Checks whether a candidate track cost can be paid by the available bag.
+     *
+     * @param cost the candidate route cost
+     * @param bag the available track bag
+     * @return {@code true} if the bag can afford the cost
+     */
     private static boolean canAfford(TrackBag cost, TrackBag bag) {
         for (Route.Color color : Route.Color.values()) {
             if (color == Route.Color.X) {

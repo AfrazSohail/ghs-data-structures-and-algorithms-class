@@ -1,8 +1,19 @@
 
 import java.util.Scanner;
 
+/**
+ * Provides the console entry point for running the TrainGame program.
+ * Written by AI for Afraz Sohail.
+ *
+ * @author Afraz Sohail
+ */
 public class TicketDriver {
 
+    /**
+     * Starts the program, loads data, and prompts the user for route requests.
+     *
+     * @param args command-line arguments, unused by this program
+     */
     public static void main(String[] args) {
         TicketToRide.loadFiles();
         TicketToRide.displayData();
