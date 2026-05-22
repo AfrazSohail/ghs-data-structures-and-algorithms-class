@@ -9,6 +9,13 @@
             "name": "Driver",
             "request": "launch",
             "mainClass": "Driver",
+            "projectName": "ghs-data-structures-and-algorithms-class_1befc733"
+        },
+        {
+            "type": "java",
+            "name": "Driver",
+            "request": "launch",
+            "mainClass": "Driver",
             "projectName": "ghs-data-structures-and-algorithms-class_fc8877a4"
         },
         {

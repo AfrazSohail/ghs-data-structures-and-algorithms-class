@@ -1,128 +1,125 @@
-import java.util.*;
+import java.util.Arrays;
 
 public class Connect4 {
 
-	int ROWS;
-	int COLS;
+    int ROWS;
+    int COLS;
 
-	char EMPTY = '.';
-	char AI = 'X';
-	char HUMAN = 'O';
-	char[][] board;
+    char EMPTY = '.';
+    char AI = 'X';
+    char HUMAN = 'O';
+    char[][] board;
 
-	public Connect4(int rows, int cols) {
-		ROWS = rows;
-		COLS = cols;
-		board = new char[ROWS][COLS];
-		this.initBoard();
-	}
+    public Connect4(int rows, int cols) {
+        ROWS = rows;
+        COLS = cols;
+        board = new char[ROWS][COLS];
+        this.initBoard();
+    }
 
-	// Initialize board
-	public void initBoard() {
-		for (int r = 0; r < ROWS; r++) {
-			Arrays.fill(board[r], EMPTY);
-		}
-	}
+    // Initialize board
+    public void initBoard() {
+        for (int r = 0; r < ROWS; r++) {
+            Arrays.fill(board[r], EMPTY);
+        }
+    }
 
+    // Move validation
+    boolean isValidMove(int col) {
+        return col >= 0 && col < COLS && board[0][col] == EMPTY;
+    }
 
-	// Move validation
-	boolean isValidMove(int col) {
-		return col >= 0 && col < COLS && board[0][col] == EMPTY;
-	}
+    // Drop piece
+    int dropPiece(int col, char player) {
+        for (int row = ROWS - 1; row >= 0; row--) {
+            if (board[row][col] == EMPTY) {
+                board[row][col] = player;
+                return row;
+            }
+        }
+        return -1;
+    }
 
-	// Drop piece
-	int dropPiece(int col, char player) {
-		for (int row = ROWS - 1; row >= 0; row--) {
-			if (board[row][col] == EMPTY) {
-				board[row][col] = player;
-				return row;
-			}
-		}
-		return -1;
-	}
+    // Terminal check
+    char isGameOver() {
+        if (checkWin(AI) == AI)
+            return AI;
+        if (checkWin(HUMAN) == HUMAN)
+            return HUMAN;
 
+        return isFull() ? 'D' : 0;
+    }
 
+    boolean isFull() {
+        for (int c = 0; c < COLS; c++) {
+            if (board[0][c] == EMPTY)
+                return false;
+        }
+        return true;
+    }
 
-	// Terminal check
-	char isGameOver() {
-		if (checkWin(AI) == AI)
-			return AI;
-		if (checkWin(HUMAN) == HUMAN)
-			return HUMAN;
+    // Win detection
+    char checkWin(char player) {// Row 0 is the top row
 
-		return isFull() ? 'D' : 0;
-	}
+        // Horizontal
+        for (int r = 0; r < ROWS; r++)
+            for (int c = 0; c < COLS - 3; c++)
+                if (board[r][c] == player && board[r][c + 1] == player && board[r][c + 2] == player
+                        && board[r][c + 3] == player)
+                    return player;
 
-	boolean isFull() {
-		for (int c = 0; c < COLS; c++) {
-			if (board[0][c] == EMPTY)
-				return false;
-		}
-		return true;
-	}
+        // Vertical
+        for (int c = 0; c < COLS; c++)
+            for (int r = 0; r < ROWS - 3; r++)
+                if (board[r][c] == player && board[r + 1][c] == player && board[r + 2][c] == player
+                        && board[r + 3][c] == player)
+                    return player;
 
-	// Win detection
-	char checkWin(char player) {// Row 0 is the top row
+        // Diagonal /
+        for (int r = 3; r < ROWS; r++)
+            for (int c = 0; c < COLS - 3; c++)
+                if (board[r][c] == player && board[r - 1][c + 1] == player && board[r - 2][c + 2] == player
+                        && board[r - 3][c + 3] == player)
+                    return player;
 
-		// Horizontal
-		for (int r = 0; r < ROWS; r++)
-			for (int c = 0; c < COLS - 3; c++)
-				if (board[r][c] == player && board[r][c + 1] == player && board[r][c + 2] == player
-						&& board[r][c + 3] == player)
-					return player;
+        // Diagonal \
+        for (int r = 0; r < ROWS - 3; r++)
+            for (int c = 0; c < COLS - 3; c++)
+                if (board[r][c] == player && board[r + 1][c + 1] == player && board[r + 2][c + 2] == player
+                        && board[r + 3][c + 3] == player)
+                    return player;
 
-		// Vertical
-		for (int c = 0; c < COLS; c++)
-			for (int r = 0; r < ROWS - 3; r++)
-				if (board[r][c] == player && board[r + 1][c] == player && board[r + 2][c] == player
-						&& board[r + 3][c] == player)
-					return player;
+        return 0;
+    }
 
-		// Diagonal /
-		for (int r = 3; r < ROWS; r++)
-			for (int c = 0; c < COLS - 3; c++)
-				if (board[r][c] == player && board[r - 1][c + 1] == player && board[r - 2][c + 2] == player
-						&& board[r - 3][c + 3] == player)
-					return player;
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
 
-		// Diagonal \
-		for (int r = 0; r < ROWS - 3; r++)
-			for (int c = 0; c < COLS - 3; c++)
-				if (board[r][c] == player && board[r + 1][c + 1] == player && board[r + 2][c + 2] == player
-						&& board[r + 3][c + 3] == player)
-					return player;
+        // Column labels
+        sb.append(" ");
+        for (int c = 0; c < COLS; c++) {
+            sb.append(c).append(" ");
+        }
+        sb.append("\n");
 
-		return 0;
-	}
+        // Board rows
+        for (int r = 0; r < ROWS; r++) {
+            sb.append("|");
+            for (int c = 0; c < COLS; c++) {
+                sb.append(board[r][c]).append("|");
+            }
+            sb.append("\n");
+        }
 
-	public String toString() {
-		StringBuilder sb = new StringBuilder();
+        // Bottom border
+        sb.append(" ");
+        for (int c = 0; c < COLS; c++) {
+            sb.append("- ");
+        }
+        sb.append("\n");
 
-		// Column labels
-		sb.append(" ");
-		for (int c = 0; c < COLS; c++) {
-			sb.append(c).append(" ");
-		}
-		sb.append("\n");
-
-		// Board rows
-		for (int r = 0; r < ROWS; r++) {
-			sb.append("|");
-			for (int c = 0; c < COLS; c++) {
-				sb.append(board[r][c]).append("|");
-			}
-			sb.append("\n");
-		}
-
-		// Bottom border
-		sb.append(" ");
-		for (int c = 0; c < COLS; c++) {
-			sb.append("- ");
-		}
-		sb.append("\n");
-
-		return sb.toString();
-	}
+        return sb.toString();
+    }
 
     public int getBestMove() {
         // return (int)(Math.random()*COLS);
